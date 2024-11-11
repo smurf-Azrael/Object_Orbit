@@ -4837,7 +4837,8 @@ html.no-touch .notification__info:hover,html.no-touch .notification .manage:hove
 }
 
 .layout__web {
-    background: url("../img/homeBg.jpg") no-repeat fixed center;
+    /* background: url("../img/homeBg.jpg") no-repeat fixed center; */
+    background-color: #000;
     background-size: cover;
     width: 100vw;
     height: 100vh

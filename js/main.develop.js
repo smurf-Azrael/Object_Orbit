@@ -243,8 +243,8 @@
             // 2. Create a sprite material with the texture
             var spriteMaterial = new THREE.SpriteMaterial({ map: texture });
             particle = new NodePoint(spriteMaterial);
-            width = 10;
-            height = 10;
+            width = 20;
+            height = 20;
         }
         else {
             // Fallback if particleOptions.img is undefined or null
@@ -3113,13 +3113,6 @@
                             { label: '          MUSICA', connections: [1, 5, 6, 7, 8], url: 'http://google.com/', cVParents: [1], img: './img/MUSICA.png' },
                             { label: '          SPORTS', connections: [0, 6, 7, 8, 9], url: 'http://google.com/', cVParents: [1], img: './img/SPORTS.png' },
 
-                            // { label: '                  digital', connections: [4, 5, 6], url: '/expertise', cVParents: [1, 2, 3], img: './img/ARTS.png' },
-                            // { label: '                  speakers', connections: [5, 6, 7], url: '/expertise', cVParents: [1, 2, 3], img: './img/ARTS.png' },
-                            // { label: '                 culinary', connections: [], url: '/expertise', cVParents: [1], img: './img/ARTS.png' },
-                            // { label: '                sports', connections: [10], url: '/expertise', cVParents: [1], img: './img/ARTS.png' },
-                            // { label: '           brands', connections: [10, 11], url: '/expertise', cVParents: [1], img: './img/ARTS.png' },
-                            // { label: '               virtual reality', connections: [10], url: '/expertise', cVParents: [1], img: './img/ARTS.png' },
-                            // { label: '               philanthropy', connections: [12, 13], url: '/responsibility', cVParents: [1], img: './img/ARTS.png' }
                         ]
                     }
                 ];
@@ -3137,9 +3130,9 @@
                 this.bgExtrasScene.add(this.bgExtrasCam);
 
                 //add background image
-                var bgTexture = new THREE.TextureLoader().load('../img/homeBg.jpg');
+                var bgTexture = new THREE.TextureLoader().load('../img/BOLA_MUNDO.png');
                 var bg = new THREE.Mesh(
-                    new THREE.PlaneGeometry(2, 2, 0),
+                    new THREE.PlaneGeometry(1, window.innerWidth / window.innerHeight, 1, 1),
                     new THREE.MeshBasicMaterial({ map: bgTexture })
                 );
 
@@ -3176,7 +3169,7 @@
                             }
 
                             defaultText.position.z = 10;
-                            particle.sprite.add(defaultText);
+                            // particle.sprite.add(defaultText);
                         }
 
                         _this.geometry.vertices.push(particle.sprite.position);
@@ -3215,8 +3208,8 @@
                 this.nodes.add(this.plane);
                 this.scene.add(this.nodes);
 
-                this.earth = this.makeEarth();
-                this.scene.add(this.earth);
+                // this.earth = this.makeEarth();
+                // this.scene.add(this.earth);
 
                 // makeExtraParticles
                 // var lineMaterial = new THREE.LineBasicMaterial({ color: '#ffffff', opacity: opacity, transparent: true });
