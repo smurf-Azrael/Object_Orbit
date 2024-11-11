@@ -243,8 +243,8 @@
             // 2. Create a sprite material with the texture
             var spriteMaterial = new THREE.SpriteMaterial({ map: texture });
             particle = new NodePoint(spriteMaterial);
-            width = 20;
-            height = 20;
+            width = 30;
+            height = 30;
         }
         else {
             // Fallback if particleOptions.img is undefined or null
@@ -318,6 +318,7 @@
             context.enableImageSmoothing = false;
             context.fillStyle = gradient;
             context.fillRect(0, 0, 256, 256);
+
             var texture = new THREE.Texture(canvas);
             texture.needsUpdate = true;
             //webGL doesnt support Sprite Canvas Material
@@ -3129,7 +3130,7 @@
                 this.bgExtrasCam.position.z = 420;
                 this.bgExtrasScene.add(this.bgExtrasCam);
 
-                //add background image
+                // //add background image
                 var bgTexture = new THREE.TextureLoader().load('../img/BOLA_MUNDO.png');
                 var bg = new THREE.Mesh(
                     new THREE.PlaneGeometry(1, window.innerWidth / window.innerHeight, 1, 1),
