@@ -3110,8 +3110,8 @@
                             { label: '      FUTBOL', connections: [2, 3, 4, 5], url: '/expertise', cVParents: [1], img: './img/FUTBOL.png' },
                             { label: '  MOTOGP', connections: [3, 4, 5, 6], url: '/expertise', cVParents: [1], img: './img/MOTOGP.png' },
                             { label: '          WELLNESS', connections: [4, 5, 6, 7], url: 'http://google.com/', cVParents: [1], img: './img/WELLNESS.png' },
-                            { label: '          MUSICA', connections: [5, 6, 7, 8], url: 'http://google.com/', cVParents: [1], img: './img/MUSICA.png' },
-                            { label: '          SPORTS', connections: [6, 7, 8, 9], url: 'http://google.com/', cVParents: [1], img: './img/SPORTS.png' },
+                            { label: '          MUSICA', connections: [1, 5, 6, 7, 8], url: 'http://google.com/', cVParents: [1], img: './img/MUSICA.png' },
+                            { label: '          SPORTS', connections: [0, 6, 7, 8, 9], url: 'http://google.com/', cVParents: [1], img: './img/SPORTS.png' },
 
                             // { label: '                  digital', connections: [4, 5, 6], url: '/expertise', cVParents: [1, 2, 3], img: './img/ARTS.png' },
                             // { label: '                  speakers', connections: [5, 6, 7], url: '/expertise', cVParents: [1, 2, 3], img: './img/ARTS.png' },
