@@ -243,8 +243,8 @@
             // 2. Create a sprite material with the texture
             var spriteMaterial = new THREE.SpriteMaterial({ map: texture });
             particle = new NodePoint(spriteMaterial);
-            width = 30;
-            height = 30;
+            width = 20;
+            height = 20;
         }
         else {
             // Fallback if particleOptions.img is undefined or null
