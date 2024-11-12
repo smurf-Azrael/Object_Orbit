@@ -3133,7 +3133,7 @@
                 // //add background image
                 var bgTexture = new THREE.TextureLoader().load('../img/BOLA_MUNDO.png');
                 var bg = new THREE.Mesh(
-                    new THREE.PlaneGeometry(0.2, 0.2 * window.innerWidth / window.innerHeight, 100, 1),
+                    new THREE.PlaneGeometry(0.2, 0.2 * window.innerWidth / window.innerHeight, 1, 1),
                     new THREE.MeshBasicMaterial({ map: bgTexture })
                 );
 
@@ -3141,9 +3141,11 @@
                 bg.material.depthWrite = false;
                 bg.material.overdraw = true; //fixes diagonal line
                 this.bgScene = new THREE.Scene();
+                // bg.position.z = 50
                 this.bgCam = new THREE.Camera();
+                // this.bgCam.position.z = -100
                 this.bgScene.add(this.bgCam);
-                this.bgScene.add(bg);
+                // this.bgScene.add(bg);
 
                 var opacity;
                 if (_this.isWebGL) {

@@ -4878,7 +4878,20 @@ html.no-touch .notification__info:hover,html.no-touch .notification .manage:hove
 .hasLoaded .nodeweb {
     opacity: 1
 }
+.earth {  
+    position: absolute;  
+    bottom: 50%;  
+    left: 50%;  
+    transform: translate(-50%, 50%);  
+}  
 
+.earth > img {  
+    transition: transform 0.3s ease-in-out;  
+}  
+
+.earth > img:hover {  
+    transform: scale(1.1);  
+}  
 .lockup {
     opacity: 0;
     position: absolute;
