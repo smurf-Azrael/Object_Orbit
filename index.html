@@ -30,6 +30,13 @@
         <script src="js/libs.develop.js"></script>
         <script src="js/templates.develop.js"></script>
         <script src="js/main.develop.js"></script>
+        <script>  
+            document.addEventListener("DOMContentLoaded", function() {  
+                setTimeout(function() {  
+                    document.querySelector('.earth > img').classList.add('appear');  
+                }, 2500); // 1000 milliseconds = 1 second  
+            });  
+        </script> 
         <!--END SETTINGS MODULE-->
     </body>
 </html>
