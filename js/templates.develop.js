@@ -1,7 +1,7 @@
 this["TEMPLATES"] = this["TEMPLATES"] || {};
 
 Handlebars.registerPartial("careers-feed-module", this["TEMPLATES"]["careers-feed-module"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "        <div class=\"careers__item\">\n           <a class=\"careers__item-link feat-link\" href=\"" + container.escapeExpression(alias1((depth0 != null ? depth0.url : depth0), depth0)) + "\" target=\"" + ((stack1 = helpers["if"].call(alias2, (depth0 != null ? depth0.is_external : depth0), {
@@ -24,25 +24,25 @@ Handlebars.registerPartial("careers-feed-module", this["TEMPLATES"]["careers-fee
             "data": data
         })) != null ? stack1 : "") + "        </div>\n";
     },
-    "2": function(container, depth0, helpers, partials, data) {
+    "2": function (container, depth0, helpers, partials, data) {
         return "_blank";
     },
-    "4": function(container, depth0, helpers, partials, data) {
+    "4": function (container, depth0, helpers, partials, data) {
         return "_self";
     },
-    "6": function(container, depth0, helpers, partials, data) {
+    "6": function (container, depth0, helpers, partials, data) {
         return "external";
     },
-    "8": function(container, depth0, helpers, partials, data) {
+    "8": function (container, depth0, helpers, partials, data) {
         return "internal";
     },
-    "10": function(container, depth0, helpers, partials, data) {
+    "10": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "                <p>" + ((stack1 = container.lambda((depth0 != null ? depth0.body : depth0), depth0)) != null ? stack1 : "") + "</p>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!--CAREERS-FEED MODULE-->\n<div class=\"careers animate\">\n\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.items : depth0), {
@@ -57,13 +57,13 @@ Handlebars.registerPartial("careers-feed-module", this["TEMPLATES"]["careers-fee
 }));
 
 Handlebars.registerPartial("content-tile-module", this["TEMPLATES"]["content-tile-module"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         return "content--position";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         return "last";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<a class=\"content__link-wrapper\"  href=\"" + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.link : depth0)) != null ? stack1.url : stack1), depth0)) + "\" target=\"" + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}), ((stack1 = (depth0 != null ? depth0.link : depth0)) != null ? stack1.is_external : stack1), {
@@ -74,13 +74,13 @@ Handlebars.registerPartial("content-tile-module", this["TEMPLATES"]["content-til
             "data": data
         })) != null ? stack1 : "") + "\"></a>";
     },
-    "6": function(container, depth0, helpers, partials, data) {
+    "6": function (container, depth0, helpers, partials, data) {
         return "_blank";
     },
-    "8": function(container, depth0, helpers, partials, data) {
+    "8": function (container, depth0, helpers, partials, data) {
         return "_self";
     },
-    "10": function(container, depth0, helpers, partials, data) {
+    "10": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "	        <div class=\"content__cover-wrapper " + ((stack1 = helpers.unless.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.show_title : depth0), {
@@ -91,30 +91,30 @@ Handlebars.registerPartial("content-tile-module", this["TEMPLATES"]["content-til
             "data": data
         })) != null ? stack1 : "") + "\" style=\"background-image: url('" + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.image : depth0)) != null ? stack1.url : stack1), depth0)) + "')\">\n	        </div>\n";
     },
-    "11": function(container, depth0, helpers, partials, data) {
+    "11": function (container, depth0, helpers, partials, data) {
         return "no-title";
     },
-    "13": function(container, depth0, helpers, partials, data) {
+    "13": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "				<div class=\"content__title\">\n					<h3>" + ((stack1 = ((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "title",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</h3>\n				</div>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "title",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</h3>\n				</div>\n";
     },
-    "15": function(container, depth0, helpers, partials, data) {
+    "15": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "				<div class=\"wysiwyg\"><p>" + ((stack1 = ((helper = (helper = helpers.overview || (depth0 != null ? depth0.overview : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "overview",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p></div>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "overview",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</p></div>\n";
     },
-    "17": function(container, depth0, helpers, partials, data) {
+    "17": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = container.lambda, alias3 = container.escapeExpression;
 
         return "				 <a class=\"btn feat-link\" target=\"" + ((stack1 = helpers["if"].call(alias1, ((stack1 = (depth0 != null ? depth0.link : depth0)) != null ? stack1.is_external : stack1), {
@@ -131,14 +131,14 @@ Handlebars.registerPartial("content-tile-module", this["TEMPLATES"]["content-til
             "data": data
         })) != null ? stack1 : "") + "		        </a>\n";
     },
-    "18": function(container, depth0, helpers, partials, data) {
+    "18": function (container, depth0, helpers, partials, data) {
         return "		                <i class='external'></i>\n";
     },
-    "20": function(container, depth0, helpers, partials, data) {
+    "20": function (container, depth0, helpers, partials, data) {
         return "		                <i class='internal'></i>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "\n<!--CONTENT-FEED MODULE-->\n<div class=\"content " + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.position : depth0), {
@@ -189,13 +189,13 @@ Handlebars.registerPartial("content-tile-module", this["TEMPLATES"]["content-til
 }));
 
 Handlebars.registerPartial("listing-module", this["TEMPLATES"]["listing-module"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "        <li class=\"listing__list-item\">\n            <span>" + ((stack1 = container.lambda((depth0 != null ? depth0.name : depth0), depth0)) != null ? stack1 : "") + "</span>\n        </li>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!--LIST MODULE-->\n<div class=\"listing animate\">\n    <h2 class=\"listing__title\">\n        <span>" + ((stack1 = container.lambda((depth0 != null ? depth0.index : depth0), depth0)) != null ? stack1 : "") + "</span>\n    </h2>\n\n    <ul class=\"listing__list\">\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.names : depth0), {
@@ -210,49 +210,49 @@ Handlebars.registerPartial("listing-module", this["TEMPLATES"]["listing-module"]
 }));
 
 Handlebars.registerPartial("office-feed-module", this["TEMPLATES"]["office-feed-module"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         return "grid-result--cover";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "            <div class=\"grid-result__cover-wrapper\">\n                <picture>\n                    <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n                   <!-- <source srcset=\"" + alias4(((helper = (helper = helpers.image_tablet || (depth0 != null ? depth0.image_tablet : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "image_tablet",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" media=\"(max-width: 1200px)\">\n                    <source srcset=\"" + alias4(((helper = (helper = helpers.image_mobile || (depth0 != null ? depth0.image_mobile : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "image_mobile",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" media=\"(max-width: 900px)\"> !-->\n                    <!--[if IE 9]></video><![endif]-->\n                    <img class=\"grid-result__cover\" src=\"" + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "image",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" srcset=\"" + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "image",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" min-height=\"100px\">\n                </picture>\n            </div>\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "image_tablet",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\" media=\"(max-width: 1200px)\">\n                    <source srcset=\"" + alias4(((helper = (helper = helpers.image_mobile || (depth0 != null ? depth0.image_mobile : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "image_mobile",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "\" media=\"(max-width: 900px)\"> !-->\n                    <!--[if IE 9]></video><![endif]-->\n                    <img class=\"grid-result__cover\" src=\"" + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),
+                    (typeof helper === alias3 ? helper.call(alias1, {
+                        "name": "image",
+                        "hash": {},
+                        "data": data
+                    }) : helper))) + "\" srcset=\"" + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),
+                        (typeof helper === alias3 ? helper.call(alias1, {
+                            "name": "image",
+                            "hash": {},
+                            "data": data
+                        }) : helper))) + "\" min-height=\"100px\">\n                </picture>\n            </div>\n";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         return "title";
     },
-    "7": function(container, depth0, helpers, partials, data) {
+    "7": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "<p>" + container.escapeExpression(((helper = (helper = helpers.address_line3 || (depth0 != null ? depth0.address_line3 : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "address_line3",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</p>";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "address_line3",
+                "hash": {},
+                "data": data
+            }) : helper))) + "</p>";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function";
 
         return "<!--OFFICE-FEED MODULE-->\n<div class=\"grid-result " + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.is_featured : depth0), {
@@ -274,50 +274,50 @@ Handlebars.registerPartial("office-feed-module", this["TEMPLATES"]["office-feed-
             "inverse": container.noop,
             "data": data
         })) != null ? stack1 : "") + "\">\n                <span>" + ((stack1 = ((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "title",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</span>\n            </h3>\n            <p>" + ((stack1 = container.lambda((depth0 != null ? depth0.address_line1 : depth0), depth0)) != null ? stack1 : "") + "</p>\n            <p>" + ((stack1 = ((helper = (helper = helpers.address_line2 || (depth0 != null ? depth0.address_line2 : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "address_line2",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p>\n            " + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.address_line3 : depth0), {
-            "name": "if",
-            "hash": {},
-            "fn": container.program(7, data, 0),
-            "inverse": container.noop,
-            "data": data
-        })) != null ? stack1 : "") + "\n            <p>" + ((stack1 = ((helper = (helper = helpers.phone || (depth0 != null ? depth0.phone : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "phone",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p>\n            <p>" + ((stack1 = ((helper = (helper = helpers.fax || (depth0 != null ? depth0.fax : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "fax",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p>\n        </div>\n    </div>\n</div>\n<!--END OFFICE-FEED MODULE-->\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "title",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</span>\n            </h3>\n            <p>" + ((stack1 = container.lambda((depth0 != null ? depth0.address_line1 : depth0), depth0)) != null ? stack1 : "") + "</p>\n            <p>" + ((stack1 = ((helper = (helper = helpers.address_line2 || (depth0 != null ? depth0.address_line2 : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "address_line2",
+                    "hash": {},
+                    "data": data
+                }) : helper))) != null ? stack1 : "") + "</p>\n            " + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.address_line3 : depth0), {
+                    "name": "if",
+                    "hash": {},
+                    "fn": container.program(7, data, 0),
+                    "inverse": container.noop,
+                    "data": data
+                })) != null ? stack1 : "") + "\n            <p>" + ((stack1 = ((helper = (helper = helpers.phone || (depth0 != null ? depth0.phone : depth0)) != null ? helper : alias2),
+                    (typeof helper === alias3 ? helper.call(alias1, {
+                        "name": "phone",
+                        "hash": {},
+                        "data": data
+                    }) : helper))) != null ? stack1 : "") + "</p>\n            <p>" + ((stack1 = ((helper = (helper = helpers.fax || (depth0 != null ? depth0.fax : depth0)) != null ? helper : alias2),
+                        (typeof helper === alias3 ? helper.call(alias1, {
+                            "name": "fax",
+                            "hash": {},
+                            "data": data
+                        }) : helper))) != null ? stack1 : "") + "</p>\n        </div>\n    </div>\n</div>\n<!--END OFFICE-FEED MODULE-->\n";
     },
     "useData": true
 }));
 
 Handlebars.registerPartial("story-content-module", this["TEMPLATES"]["story-content-module"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "        <h2 class=\"story-content__title\">\n            <span>" + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.title : stack1), depth0)) + "</span>\n        </h2>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var alias1 = container.lambda
-          , alias2 = container.escapeExpression;
+            , alias2 = container.escapeExpression;
 
         return "            <a class=\"story-content__links__link feat-link\" href=\"" + alias2(alias1((depth0 != null ? depth0.src : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.link_value : depth0), depth0)) + "</a>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "<!-- STORY-CONTENT MODULE -->\n<div class=\"story-content\">\n" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.title : depth0), {
@@ -338,7 +338,7 @@ Handlebars.registerPartial("story-content-module", this["TEMPLATES"]["story-cont
 }));
 
 Handlebars.registerPartial("story-gallery-module", this["TEMPLATES"]["story-gallery-module"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.alternatives : depth0), {
@@ -349,38 +349,38 @@ Handlebars.registerPartial("story-gallery-module", this["TEMPLATES"]["story-gall
             "data": data
         })) != null ? stack1 : "") + "\n";
     },
-    "2": function(container, depth0, helpers, partials, data) {
+    "2": function (container, depth0, helpers, partials, data) {
         var helper, alias1 = container.escapeExpression, alias2 = depth0 != null ? depth0 : (container.nullContext || {}), alias3 = helpers.helperMissing, alias4 = "function";
 
         return "				<span class=\"randomize gallery-item\" data-options=" + alias1(container.lambda((depth0 != null ? depth0.alternatives : depth0), depth0)) + ">\n					<img class=\"" + alias1(((helper = (helper = helpers.mod || (depth0 != null ? depth0.mod : depth0)) != null ? helper : alias3),
-        (typeof helper === alias4 ? helper.call(alias2, {
-            "name": "mod",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" alt=\"" + alias1(((helper = (helper = helpers.alt || (depth0 != null ? depth0.alt : depth0)) != null ? helper : alias3),
-        (typeof helper === alias4 ? helper.call(alias2, {
-            "name": "alt",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" min-height=\"100px\">\n				</span>\n";
+            (typeof helper === alias4 ? helper.call(alias2, {
+                "name": "mod",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\" alt=\"" + alias1(((helper = (helper = helpers.alt || (depth0 != null ? depth0.alt : depth0)) != null ? helper : alias3),
+                (typeof helper === alias4 ? helper.call(alias2, {
+                    "name": "alt",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" min-height=\"100px\">\n				</span>\n";
     },
-    "4": function(container, depth0, helpers, partials, data) {
+    "4": function (container, depth0, helpers, partials, data) {
         var helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "			   <img class=\"" + alias4(((helper = (helper = helpers.mod || (depth0 != null ? depth0.mod : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "mod",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" alt=\"" + alias4(((helper = (helper = helpers.alt || (depth0 != null ? depth0.alt : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "alt",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" src=\"" + alias4(container.lambda((depth0 != null ? depth0.src_default : depth0), depth0)) + "\" min-height=\"100px\">\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "mod",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\" alt=\"" + alias4(((helper = (helper = helpers.alt || (depth0 != null ? depth0.alt : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "alt",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "\" src=\"" + alias4(container.lambda((depth0 != null ? depth0.src_default : depth0), depth0)) + "\" min-height=\"100px\">\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"gallery\">\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.gallery : depth0), {
@@ -395,14 +395,14 @@ Handlebars.registerPartial("story-gallery-module", this["TEMPLATES"]["story-gall
 }));
 
 this["TEMPLATES"]["application.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         return "Wme Dotcom";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         return "Home";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing;
 
         return "<div id=\"container\">\n	<header>\n		<h1>\n			" + ((stack1 = (helpers["link-to"] || (depth0 && depth0["link-to"]) || alias2).call(alias1, (depth0 != null ? depth0.index : depth0), {
@@ -418,18 +418,18 @@ this["TEMPLATES"]["application.hbs"] = Handlebars.template({
             "inverse": container.noop,
             "data": data
         })) != null ? stack1 : "") + "\n		</nav>\n	</header>\n	<div id=\"main\" role=\"main\">\n		" + container.escapeExpression(((helper = (helper = helpers.outlet || (depth0 != null ? depth0.outlet : depth0)) != null ? helper : alias2),
-        (typeof helper === "function" ? helper.call(alias1, {
-            "name": "outlet",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\n	</div>\n</div>\n";
+            (typeof helper === "function" ? helper.call(alias1, {
+                "name": "outlet",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\n	</div>\n</div>\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["master-layout.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!doctype html>\n<html>\n\n" + ((stack1 = container.invokePartial(partials["head-module"], (depth0 != null ? depth0.settings : depth0), {
@@ -481,7 +481,7 @@ this["TEMPLATES"]["master-layout.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["agent-finder-module.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         return "\n<div class=\"agent-finder\">\n\n<!--	<div class=\"agent-finder-form-container\">-->\n<!--		<span class='search-text'>Search By:</span>-->\n<!--		<div class=\"agent-finder-buttons\">-->\n<!--		</div>-->\n\n<!--		<div class=\"agent-finder-form\">-->\n<!--		</div>-->\n<!--	</div>-->\n<!--	<div class=\"agent-results-container\">-->\n<!--	</div>-->\n</div>\n";
     },
     "useData": true
@@ -489,35 +489,35 @@ this["TEMPLATES"]["agent-finder-module.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["agent-results-module.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         return "<div class=\"agent-results\">\n\n</div>\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["agent-results.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "	<h3 class=\"grid-result__title\">\n		<span>" + container.escapeExpression(((helper = (helper = helpers.heading || (depth0 != null ? depth0.heading : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "heading",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</span>\n	</h3>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "heading",
+                "hash": {},
+                "data": data
+            }) : helper))) + "</span>\n	</h3>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "	<h4 class=\"grid-result__subtitle\">\n		<span>" + container.escapeExpression(((helper = (helper = helpers.subheading || (depth0 != null ? depth0.subheading : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "subheading",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</span>\n	</h4>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "subheading",
+                "hash": {},
+                "data": data
+            }) : helper))) + "</span>\n	</h4>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.heading : depth0), {
@@ -539,42 +539,42 @@ this["TEMPLATES"]["agent-results.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["agent-sub-results.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "<h3 class=\"grid-result__title\">\n	<span>" + container.escapeExpression(((helper = (helper = helpers.heading || (depth0 != null ? depth0.heading : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "heading",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</span>\n</h3>\n<div class=\"sub-results-list\"></div>";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "heading",
+                "hash": {},
+                "data": data
+            }) : helper))) + "</span>\n</h3>\n<div class=\"sub-results-list\"></div>";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["agent.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = container.escapeExpression;
 
         return "            <h3> <span> " + alias1(((helper = (helper = helpers.heading || (depth0 != null ? depth0.heading : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "heading",
-            "hash": {},
-            "data": data
-        }) : helper))) + " - " + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.agent : depth0)) != null ? stack1.venue_size : stack1), depth0)) + " </span> </h3>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "heading",
+                "hash": {},
+                "data": data
+            }) : helper))) + " - " + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.agent : depth0)) != null ? stack1.venue_size : stack1), depth0)) + " </span> </h3>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "             <h3> <span> " + container.escapeExpression(((helper = (helper = helpers.heading || (depth0 != null ? depth0.heading : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "heading",
-            "hash": {},
-            "data": data
-        }) : helper))) + " </span> </h3>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "heading",
+                "hash": {},
+                "data": data
+            }) : helper))) + " </span> </h3>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression;
 
         return "<div class=\"grid-result__wrapper\">\n    <div class=\"grid-result__content-wrapper\">\n" + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}), ((stack1 = (depth0 != null ? depth0.agent : depth0)) != null ? stack1.venue_size : stack1), {
@@ -589,7 +589,7 @@ this["TEMPLATES"]["agent.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["dropdown.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression, alias3 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "            <li class=\"form__inquiries-item\">\n                <input id=\"" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "\"\n                       class=\"form__field-radio\"\n                       " + ((stack1 = helpers["if"].call(alias3, (depth0 != null ? depth0.displayValue : depth0), {
@@ -606,110 +606,110 @@ this["TEMPLATES"]["dropdown.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "\n                       value=\"" + alias2(alias1((depth0 != null ? depth0.value : depth0), depth0)) + "\">\n                <label class=\"form__field-label\" for=\"" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "</label>\n            </li>\n";
     },
-    "2": function(container, depth0, helpers, partials, data) {
+    "2": function (container, depth0, helpers, partials, data) {
         return " data-display=\"" + container.escapeExpression(container.lambda((depth0 != null ? depth0.displayValue : depth0), depth0)) + "\"";
     },
-    "4": function(container, depth0, helpers, partials, data) {
+    "4": function (container, depth0, helpers, partials, data) {
         return container.escapeExpression(container.lambda(depth0, depth0)) + " ";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function";
 
         return "<div class=\"form__wrapper\">\n    <button class=\"form__toggle\" type=\"button\"></button>\n    <div class=\"form__field-overlay\">\n        <span class=\"form__field-label\"\n              data-label=\"" + container.escapeExpression(((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "label",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\">" + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "label",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "\n        </span>\n    </div>\n    <ul class=\"form__inquiries\">\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.values : depth0), {
-            "name": "each",
-            "hash": {},
-            "fn": container.program(1, data, 0),
-            "inverse": container.noop,
-            "data": data
-        })) != null ? stack1 : "") + "    </ul>\n</div>\n\n\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "label",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\">" + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "label",
+                    "hash": {},
+                    "data": data
+                }) : helper))) != null ? stack1 : "") + "\n        </span>\n    </div>\n    <ul class=\"form__inquiries\">\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.values : depth0), {
+                    "name": "each",
+                    "hash": {},
+                    "fn": container.program(1, data, 0),
+                    "inverse": container.noop,
+                    "data": data
+                })) != null ? stack1 : "") + "    </ul>\n</div>\n\n\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["error-message.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return container.escapeExpression(((helper = (helper = helpers.errorMessage || (depth0 != null ? depth0.errorMessage : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "errorMessage",
-            "hash": {},
-            "data": data
-        }) : helper)));
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "errorMessage",
+                "hash": {},
+                "data": data
+            }) : helper)));
     },
     "useData": true
 });
 
 this["TEMPLATES"]["form-button.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return container.escapeExpression(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "text",
-            "hash": {},
-            "data": data
-        }) : helper)));
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "text",
+                "hash": {},
+                "data": data
+            }) : helper)));
     },
     "useData": true
 });
 
 this["TEMPLATES"]["preloader.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         return "<div class=\"preloader\"></div>";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["article-feed-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         return "hasImages";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "        <a class='inpage-anchor' name='" + container.escapeExpression(((helper = (helper = helpers.slug || (depth0 != null ? depth0.slug : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "slug",
-            "hash": {},
-            "data": data
-        }) : helper))) + "'></a>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "slug",
+                "hash": {},
+                "data": data
+            }) : helper))) + "'></a>\n";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "    <h2 class=\"article-feed__title\">\n        <span>" + ((stack1 = ((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "title",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</span>\n    </h2>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "title",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</span>\n    </h2>\n";
     },
-    "7": function(container, depth0, helpers, partials, data) {
+    "7": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "        <div class=\"article-feed__text wysiwyg\">\n            <p>" + ((stack1 = ((helper = (helper = helpers.top_text || (depth0 != null ? depth0.top_text : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "top_text",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p>\n        </div>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "top_text",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</p>\n        </div>\n";
     },
-    "9": function(container, depth0, helpers, partials, data) {
+    "9": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.links : depth0), {
@@ -720,7 +720,7 @@ this["TEMPLATES"]["article-feed-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "");
     },
-    "10": function(container, depth0, helpers, partials, data) {
+    "10": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "             <a class=\"btn feat-link\" target=\"" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.is_external : depth0), {
@@ -730,36 +730,36 @@ this["TEMPLATES"]["article-feed-module.hbs"] = Handlebars.template({
             "inverse": container.program(13, data, 0),
             "data": data
         })) != null ? stack1 : "") + "\" href=\"" + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\">\n                " + alias4(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "text",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\n                <i class='" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.is_external : depth0), {
-            "name": "if",
-            "hash": {},
-            "fn": container.program(15, data, 0),
-            "inverse": container.program(17, data, 0),
-            "data": data
-        })) != null ? stack1 : "") + "'></i>\n            </a>\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "url",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\">\n                " + alias4(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "text",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "\n                <i class='" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.is_external : depth0), {
+                    "name": "if",
+                    "hash": {},
+                    "fn": container.program(15, data, 0),
+                    "inverse": container.program(17, data, 0),
+                    "data": data
+                })) != null ? stack1 : "") + "'></i>\n            </a>\n";
     },
-    "11": function(container, depth0, helpers, partials, data) {
+    "11": function (container, depth0, helpers, partials, data) {
         return "_blank";
     },
-    "13": function(container, depth0, helpers, partials, data) {
+    "13": function (container, depth0, helpers, partials, data) {
         return "_self";
     },
-    "15": function(container, depth0, helpers, partials, data) {
+    "15": function (container, depth0, helpers, partials, data) {
         return "external";
     },
-    "17": function(container, depth0, helpers, partials, data) {
+    "17": function (container, depth0, helpers, partials, data) {
         return "internal";
     },
-    "19": function(container, depth0, helpers, partials, data) {
+    "19": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "        <div class=\"article-feed__image-wrapper " + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.single : depth0), {
@@ -776,10 +776,10 @@ this["TEMPLATES"]["article-feed-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "        </div>\n";
     },
-    "20": function(container, depth0, helpers, partials, data) {
+    "20": function (container, depth0, helpers, partials, data) {
         return "single";
     },
-    "22": function(container, depth0, helpers, partials, data) {
+    "22": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "                <div class=\"article-feed__image gallery-item grid\">\n                    <img class=\"grid-image-full\" src='data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'/>\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.leftImages : depth0), {
@@ -796,17 +796,17 @@ this["TEMPLATES"]["article-feed-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "                </div>\n";
     },
-    "23": function(container, depth0, helpers, partials, data) {
+    "23": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "                        <img class=\"grid-image\" src=\"" + container.escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" min-height=\"100px\">\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "url",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\" min-height=\"100px\">\n";
     },
-    "25": function(container, depth0, helpers, partials, data) {
+    "25": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.leftImages : depth0), {
@@ -823,38 +823,38 @@ this["TEMPLATES"]["article-feed-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "");
     },
-    "26": function(container, depth0, helpers, partials, data) {
+    "26": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "                     <div class=\"article-feed__image gallery-item\">\n                        <img src=\"" + container.escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" min-height=\"100px\">\n                    </div>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "url",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\" min-height=\"100px\">\n                    </div>\n";
     },
-    "28": function(container, depth0, helpers, partials, data) {
+    "28": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "                    <div class=\"article-feed__image gallery-item\">\n                        <img src=\"" + container.escapeExpression(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" min-height=\"100px\">\n                    </div>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "url",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\" min-height=\"100px\">\n                    </div>\n";
     },
-    "30": function(container, depth0, helpers, partials, data) {
+    "30": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "        <div class=\"article-feed__text wysiwyg\"><p>" + ((stack1 = ((helper = (helper = helpers.bottom_text || (depth0 != null ? depth0.bottom_text : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "bottom_text",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p></div>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "bottom_text",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</p></div>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "<div class=\"article-feed " + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.hasImages : depth0), {
@@ -905,17 +905,17 @@ this["TEMPLATES"]["article-feed-module.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["base.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "			<section class=\"layout__content-description wysiwyg\">" + ((stack1 = container.lambda(((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.intro : stack1), depth0)) != null ? stack1 : "") + "</section>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression;
 
         return "			<picture>\n        	    <!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n            	<source srcset=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.image_mobile : stack1), depth0)) + "\" media=\"(max-width: 768px)\" />\n            	<!--[if IE 9]></video><![endif]-->\n            	<img class=\"main-image\" src=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.image : stack1), depth0)) + "\" alt=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.img : depth0)) != null ? stack1.alt : stack1), depth0)) + "\" min-height=\"100px\" />\n	        </picture>\n";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = container.invokePartial(partials["content-tile-module"], depth0, {
@@ -927,7 +927,7 @@ this["TEMPLATES"]["base.hbs"] = Handlebars.template({
             "decorators": container.decorators
         })) != null ? stack1 : "");
     },
-    "7": function(container, depth0, helpers, partials, data) {
+    "7": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.title : depth0), {
@@ -944,10 +944,10 @@ this["TEMPLATES"]["base.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "");
     },
-    "8": function(container, depth0, helpers, partials, data) {
+    "8": function (container, depth0, helpers, partials, data) {
         return "		        <h2 class=\"title title--lg\">\n	                <span>" + container.escapeExpression(container.lambda((depth0 != null ? depth0.title : depth0), depth0)) + "</span>\n	            </h2>\n";
     },
-    "10": function(container, depth0, helpers, partials, data) {
+    "10": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = container.invokePartial(partials["listing-module"], depth0, {
@@ -959,10 +959,10 @@ this["TEMPLATES"]["base.hbs"] = Handlebars.template({
             "decorators": container.decorators
         })) != null ? stack1 : "");
     },
-    "12": function(container, depth0, helpers, partials, data) {
+    "12": function (container, depth0, helpers, partials, data) {
         return "	    	<div class=\"articles\"></div>\n";
     },
-    "14": function(container, depth0, helpers, partials, data) {
+    "14": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "	    	<div class=\"page__links\">\n		        <h3 class=\"page__links__title\">" + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.links_title : stack1), depth0)) + "</h3>\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), ((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.links : stack1), {
@@ -973,7 +973,7 @@ this["TEMPLATES"]["base.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "		    </div>\n";
     },
-    "15": function(container, depth0, helpers, partials, data) {
+    "15": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = container.lambda, alias3 = container.escapeExpression;
 
         return "					 <a class=\"page__links__link btn feat-link\" target=\"" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.is_external : depth0), {
@@ -990,20 +990,20 @@ this["TEMPLATES"]["base.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "			        </a>\n";
     },
-    "16": function(container, depth0, helpers, partials, data) {
+    "16": function (container, depth0, helpers, partials, data) {
         return "_blank";
     },
-    "18": function(container, depth0, helpers, partials, data) {
+    "18": function (container, depth0, helpers, partials, data) {
         return "_self";
     },
-    "20": function(container, depth0, helpers, partials, data) {
+    "20": function (container, depth0, helpers, partials, data) {
         return "			                <i class='external'></i>\n";
     },
-    "22": function(container, depth0, helpers, partials, data) {
+    "22": function (container, depth0, helpers, partials, data) {
         return "			                <i class='internal'></i>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "<!-- HERO -->\n<div class=\"layout__hero\">\n</div>\n<!-- END HERO -->\n\n<!-- CONTENT -->\n<div class=\"layout__content\">\n	<div class=\"layout__content-wrapper expertise\">\n" + ((stack1 = helpers["if"].call(alias1, ((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.intro : stack1), {
@@ -1050,21 +1050,21 @@ this["TEMPLATES"]["base.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["contact-popup.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "<!--CONTACT POP UP MODULE-->\n<div class=\"consent\">\n\n    <div class=\"notification__wrapper\">\n        <p class=\"notification__text\">" + ((stack1 = ((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "text",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p>\n        <div class=\"notification__sub\">\n	        <input type=\"checkbox\" class=\"notification__info\">\n        </div>\n    </div>\n\n</div>\n<!--END NOTIFICATION MODULE-->\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "text",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</p>\n        <div class=\"notification__sub\">\n	        <input type=\"checkbox\" class=\"notification__info\">\n        </div>\n    </div>\n\n</div>\n<!--END NOTIFICATION MODULE-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["dropdown-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression;
 
         return "                <li class=\"form__inquiries-item\">\n                    <input id=\"" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "\"\n                           class=\"form__field-radio\"\n                           type=\"radio\"\n                           " + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.validation : depth0), {
@@ -1075,62 +1075,62 @@ this["TEMPLATES"]["dropdown-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "\n                           value=\"" + alias2(alias1((depth0 != null ? depth0.value : depth0), depth0)) + "\">\n                    <label class=\"form__field-label\" for=\"" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "</label>\n                </li>\n";
     },
-    "2": function(container, depth0, helpers, partials, data) {
+    "2": function (container, depth0, helpers, partials, data) {
         return container.escapeExpression(container.lambda(depth0, depth0)) + " ";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function";
 
         return "\n<!--DROPDOWN MODULE-->\n<script type=\"text/template\" id=\"about-template\">\n  <div class=\"dropdown\">\n    <div class=\"form__wrapper\">\n        <button class=\"form__toggle\" type=\"button\"></button>\n        <div class=\"form__field-overlay\">\n            <span class=\"form__field-label\"\n                  data-label=\"" + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "label",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "\">" + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "label",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "\n            </span>\n        </div>\n        <ul class=\"form__inquiries\">\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.values : depth0), {
-            "name": "each",
-            "hash": {},
-            "fn": container.program(1, data, 0),
-            "inverse": container.noop,
-            "data": data
-        })) != null ? stack1 : "") + "        </ul>\n    </div>\n  </div>\n</script>\n<!--END DROPDOWN MODULE-->\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "label",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "\">" + ((stack1 = ((helper = (helper = helpers.label || (depth0 != null ? depth0.label : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "label",
+                    "hash": {},
+                    "data": data
+                }) : helper))) != null ? stack1 : "") + "\n            </span>\n        </div>\n        <ul class=\"form__inquiries\">\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.values : depth0), {
+                    "name": "each",
+                    "hash": {},
+                    "fn": container.program(1, data, 0),
+                    "inverse": container.noop,
+                    "data": data
+                })) != null ? stack1 : "") + "        </ul>\n    </div>\n  </div>\n</script>\n<!--END DROPDOWN MODULE-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["footer-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda;
 
         return "                <li class=\"footer__list-item\">\n                    <a target=\"_self\" href=\"" + container.escapeExpression(alias1((depth0 != null ? depth0.url : depth0), depth0)) + "\">" + ((stack1 = alias1((depth0 != null ? depth0.label : depth0), depth0)) != null ? stack1 : "") + "</a>\n                </li>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "<!--FOOTER MODULE-->\n<footer class=\"footer\">\n    <div class=\"footer__content\">\n        <span class=\"footer__copy\">\n            &copy; " + container.escapeExpression(((helper = (helper = helpers.currentYear || (depth0 != null ? depth0.currentYear : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(alias1, {
-            "name": "currentYear",
-            "hash": {},
-            "data": data
-        }) : helper))) + " Endeavor Operating Company, LLC. All rights reserved. WME is an Endeavor Company.\n        </span>\n\n        <ul class=\"footer__list\">\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.navigation_links : depth0), {
-            "name": "each",
-            "hash": {},
-            "fn": container.program(1, data, 0),
-            "inverse": container.noop,
-            "data": data
-        })) != null ? stack1 : "") + "        </ul>\n    </div>\n</footer>\n<!--END FOOTER MODULE-->\n";
+            (typeof helper === "function" ? helper.call(alias1, {
+                "name": "currentYear",
+                "hash": {},
+                "data": data
+            }) : helper))) + " Endeavor Operating Company, LLC. All rights reserved. WME is an Endeavor Company.\n        </span>\n\n        <ul class=\"footer__list\">\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.navigation_links : depth0), {
+                "name": "each",
+                "hash": {},
+                "fn": container.program(1, data, 0),
+                "inverse": container.noop,
+                "data": data
+            })) != null ? stack1 : "") + "        </ul>\n    </div>\n</footer>\n<!--END FOOTER MODULE-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["form-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.fields : depth0), {
@@ -1141,7 +1141,7 @@ this["TEMPLATES"]["form-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "");
     },
-    "2": function(container, depth0, helpers, partials, data) {
+    "2": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression, alias3 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "                <div class=\"form__field\">\n                    <input id=\"" + alias2(alias1((depth0 != null ? depth0.id : depth0), depth0)) + "\"\n                           class=\"form__field-input\"\n                           type=\"" + alias2(alias1((depth0 != null ? depth0.type : depth0), depth0)) + "\"\n                           name=\"" + alias2(alias1((depth0 != null ? depth0.name : depth0), depth0)) + "\"\n                           " + ((stack1 = helpers["if"].call(alias3, (depth0 != null ? depth0.maxChars : depth0), {
@@ -1158,13 +1158,13 @@ this["TEMPLATES"]["form-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "\n                           required>\n\n                    <label for=\"" + alias2(alias1((depth0 != null ? depth0.id : depth0), depth0)) + "\" class=\"form__field-overlay\">\n                        <span class=\"form__field-label\"\n                              data-label=\"" + ((stack1 = alias1((depth0 != null ? depth0.label : depth0), depth0)) != null ? stack1 : "") + "\">" + ((stack1 = alias1((depth0 != null ? depth0.label : depth0), depth0)) != null ? stack1 : "") + "\n                        </span>\n                    </label>\n                </div>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         return "data-chars=\"" + container.escapeExpression(container.lambda((depth0 != null ? depth0.maxChars : depth0), depth0)) + "\" ";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         return container.escapeExpression(container.lambda(depth0, depth0)) + " ";
     },
-    "7": function(container, depth0, helpers, partials, data) {
+    "7": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda;
 
         return "            <div class=\"form__wrapper\">\n                <button class=\"form__toggle\" type=\"button\"></button>\n                <div class=\"form__field-overlay\">\n                    <span class=\"form__field-label\"\n                          data-label=\"" + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.inquiries : depth0)) != null ? stack1.label : stack1), depth0)) != null ? stack1 : "") + "\">" + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.inquiries : depth0)) != null ? stack1.label : stack1), depth0)) != null ? stack1 : "") + "\n                    </span>\n                </div>\n                <ul class=\"form__inquiries\">\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), ((stack1 = (depth0 != null ? depth0.inquiries : depth0)) != null ? stack1.values : stack1), {
@@ -1175,7 +1175,7 @@ this["TEMPLATES"]["form-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "                </ul>\n            </div>\n";
     },
-    "8": function(container, depth0, helpers, partials, data) {
+    "8": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression;
 
         return "                        <li class=\"form__inquiries-item\">\n                            <input id=\"" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "\"\n                                   class=\"form__field-radio\"\n                                   type=\"radio\"\n                                   " + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.validation : depth0), {
@@ -1186,7 +1186,7 @@ this["TEMPLATES"]["form-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "\n                                   value=\"" + alias2(alias1((depth0 != null ? depth0.value : depth0), depth0)) + "\">\n                            <label class=\"form__field-label\" for=\"" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.key : depth0), depth0)) + "</label>\n                        </li>\n";
     },
-    "10": function(container, depth0, helpers, partials, data) {
+    "10": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression, alias3 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "            <div class=\"form__wrapper form__wrapper--char-remaining\">\n                <textarea id=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.textarea : depth0)) != null ? stack1.id : stack1), depth0)) + "\"\n                          class=\"form__textarea\"\n                          name=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.textarea : depth0)) != null ? stack1.name : stack1), depth0)) + "\"\n                          " + ((stack1 = helpers["if"].call(alias3, ((stack1 = (depth0 != null ? depth0.textarea : depth0)) != null ? stack1.maxChars : stack1), {
@@ -1203,13 +1203,13 @@ this["TEMPLATES"]["form-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "\n                          required></textarea>\n                <label for=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.textarea : depth0)) != null ? stack1.id : stack1), depth0)) + "\" class=\"form__field-overlay\">\n                    <span class=\"form__field-label\"\n                          data-label=\"" + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.textarea : depth0)) != null ? stack1.label : stack1), depth0)) != null ? stack1 : "") + "\">" + ((stack1 = alias1(((stack1 = (depth0 != null ? depth0.textarea : depth0)) != null ? stack1.label : stack1), depth0)) != null ? stack1 : "") + "\n                    </span>\n                </label>\n            </div>\n";
     },
-    "11": function(container, depth0, helpers, partials, data) {
+    "11": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "data-chars=\"" + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.textarea : depth0)) != null ? stack1.maxChars : stack1), depth0)) + "\" ";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression, alias5 = container.lambda;
 
         return "<!--CONTACT US MODULE-->\n<article class=\"form form--card\">\n    <div class=\"form__card-wrapper\">\n        <form id=\"contactUsForm\" name=\"contactUsForm\" action=\"\" method=\"post\" enctype=\"text/plain\">\n" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.fields : depth0), {
@@ -1231,44 +1231,44 @@ this["TEMPLATES"]["form-module.hbs"] = Handlebars.template({
             "inverse": container.noop,
             "data": data
         })) != null ? stack1 : "") + "\n            <div class=\"form__error-type form__error-type--email\">" + alias4(((helper = (helper = helpers.error_email || (depth0 != null ? depth0.error_email : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "error_email",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</div>\n            <div class=\"form__error-type form__error-type--empty\">" + alias4(((helper = (helper = helpers.error_empty || (depth0 != null ? depth0.error_empty : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "error_empty",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</div>\n            <button class=\"form__submit feat-link\">Submit</button>\n        </form>\n\n\n\n        <div id=\"confirmMessage\" class=\"form__confirm\">\n            <i class=\"form__confirm-icon icon-check\"></i>\n            <h2 class=\"form__confirm-title\">\n                <span>" + ((stack1 = alias5(((stack1 = (depth0 != null ? depth0.confirmation : depth0)) != null ? stack1.title : stack1), depth0)) != null ? stack1 : "") + "</span>\n            </h2>\n            <p class=\"form__confirm-text\">\n                " + ((stack1 = alias5(((stack1 = (depth0 != null ? depth0.confirmation : depth0)) != null ? stack1.text : stack1), depth0)) != null ? stack1 : "") + "\n            </p>\n        </div>\n    </div>\n</article>\n<!--END CONTACT US MODULE-->\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "error_email",
+                "hash": {},
+                "data": data
+            }) : helper))) + "</div>\n            <div class=\"form__error-type form__error-type--empty\">" + alias4(((helper = (helper = helpers.error_empty || (depth0 != null ? depth0.error_empty : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "error_empty",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "</div>\n            <button class=\"form__submit feat-link\">Submit</button>\n        </form>\n\n\n\n        <div id=\"confirmMessage\" class=\"form__confirm\">\n            <i class=\"form__confirm-icon icon-check\"></i>\n            <h2 class=\"form__confirm-title\">\n                <span>" + ((stack1 = alias5(((stack1 = (depth0 != null ? depth0.confirmation : depth0)) != null ? stack1.title : stack1), depth0)) != null ? stack1 : "") + "</span>\n            </h2>\n            <p class=\"form__confirm-text\">\n                " + ((stack1 = alias5(((stack1 = (depth0 != null ? depth0.confirmation : depth0)) != null ? stack1.text : stack1), depth0)) != null ? stack1 : "") + "\n            </p>\n        </div>\n    </div>\n</article>\n<!--END CONTACT US MODULE-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["head-module.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "<!--HEAD MODULE-->\n<head>\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"user-scalable=no, width=device-width, initial-scale=1.0\" />\n    <meta name=\"apple-mobile-web-app-capable\" content=\"yes\" />\n    <title>WME</title>\n    <meta name=\"description\" content=\"Global leader in entertainment, sports and fashion\">\n    <meta name=\"fragment\" content=\"!\" />\n    <meta name=\"format-detection\" content=\"telephone=no\">\n    <meta content=\"yes\" name=\"apple-mobile-web-app-capable\">\n    <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black-translucent\">\n\n    <link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "static_url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "/img/favicons/favicon.ico\">\n\n    <link rel=\"stylesheet\" href=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "static_url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "/css/style.css\">\n<head>\n\n<!--END HEAD MODULE-->\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "static_url",
+                "hash": {},
+                "data": data
+            }) : helper))) + "/img/favicons/favicon.ico\">\n\n    <link rel=\"stylesheet\" href=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "static_url",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "/css/style.css\">\n<head>\n\n<!--END HEAD MODULE-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["header-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var alias1 = container.escapeExpression
-          , alias2 = container.lambda;
+            , alias2 = container.lambda;
 
         return "                <li class=\"header__list-item\" data-url=\"" + alias1((helpers.trimPath || (depth0 && depth0.trimPath) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.url : depth0), {
             "name": "trimPath",
@@ -1277,7 +1277,7 @@ this["TEMPLATES"]["header-module.hbs"] = Handlebars.template({
         })) + "\">\n                    <a target=\"_self\" href=\"" + alias1(alias2((depth0 != null ? depth0.url : depth0), depth0)) + "\">" + alias1(alias2((depth0 != null ? depth0.label : depth0), depth0)) + "</a>\n                </li>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression;
 
         return "<!--HEADER MODULE-->\n\n<header class=\"header\">\n    <div class=\"header__logo\">\n        <a href=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.logo : depth0)) != null ? stack1.url : stack1), depth0)) + "\">\n            <img src=\"" + alias2(alias1(((stack1 = (depth0 != null ? depth0.logo : depth0)) != null ? stack1.src : stack1), depth0)) + "\"/>\n        </a>\n        <div class=\"header__menu\">\n            <div>\n                <span></span>\n                <span></span>\n                <span></span>\n            </div>\n        </div>\n    </div>\n\n    <nav class=\"header__nav\">\n        <ul class=\"header__list\">\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.navigation_links : depth0), {
@@ -1292,27 +1292,27 @@ this["TEMPLATES"]["header-module.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["hero-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<style type=\"text/css\">\n    @media screen and (max-width: 480px) {\n        .hero {\n            background-image: url(" + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.image_mobile : depth0)) != null ? stack1.url : stack1), depth0)) + ") !important;\n        }\n    }\n</style>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "                <a href=\"" + alias4(((helper = (helper = helpers.url || (depth0 != null ? depth0.url : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\" class=\"hero__breadcrumb\">" + alias4(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "text",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</a>\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "url",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\" class=\"hero__breadcrumb\">" + alias4(((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "text",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "</a>\n";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression;
 
         return "                        <a class=\"hero__link feat-link\" href=\"" + alias2(alias1((depth0 != null ? depth0.url : depth0), depth0)) + "\">\n                            " + alias2(alias1((depth0 != null ? depth0.text : depth0), depth0)) + "\n                            <i class='" + ((stack1 = helpers["if"].call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.is_external : depth0), {
@@ -1323,14 +1323,14 @@ this["TEMPLATES"]["hero-module.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "'></i>\n                        </a>\n";
     },
-    "6": function(container, depth0, helpers, partials, data) {
+    "6": function (container, depth0, helpers, partials, data) {
         return "external";
     },
-    "8": function(container, depth0, helpers, partials, data) {
+    "8": function (container, depth0, helpers, partials, data) {
         return "internal";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = container.escapeExpression, alias3 = helpers.helperMissing, alias4 = "function";
 
         return ((stack1 = helpers["if"].call(alias1, ((stack1 = (depth0 != null ? depth0.image_mobile : depth0)) != null ? stack1.url : stack1), {
@@ -1346,71 +1346,71 @@ this["TEMPLATES"]["hero-module.hbs"] = Handlebars.template({
             "inverse": container.noop,
             "data": data
         })) != null ? stack1 : "") + "\n            <div class=\"hero__content-wrapper\">\n                <h1 class=\"hero__title\">\n                    <div class=\"hero__title__line--left\"></div>\n                    <div class=\"hero__title__line--right\"></div>\n                    " + alias2(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias3),
-        (typeof helper === alias4 ? helper.call(alias1, {
-            "name": "title",
-            "hash": {},
-            "data": data
-        }) : helper))) + "\n                </h1>\n            </div>\n\n            <div class=\"hero__overview wysiwyg\"><p>" + ((stack1 = ((helper = (helper = helpers.content || (depth0 != null ? depth0.content : depth0)) != null ? helper : alias3),
-        (typeof helper === alias4 ? helper.call(alias1, {
-            "name": "content",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p></div>\n\n            <div class=\"hero__link-wrapper\">\n                <div>\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.links : depth0), {
-            "name": "each",
-            "hash": {},
-            "fn": container.program(5, data, 0),
-            "inverse": container.noop,
-            "data": data
-        })) != null ? stack1 : "") + "                </div>\n            </div>\n        </div>\n</div>\n<div class=\"hero__arrow\">\n    <div class=\"hero__arrow__body\"></div>\n    <div class=\"hero__arrow__head\"></div>\n</div>\n</div>\n\n<!--HERO MODULE END-->\n";
+            (typeof helper === alias4 ? helper.call(alias1, {
+                "name": "title",
+                "hash": {},
+                "data": data
+            }) : helper))) + "\n                </h1>\n            </div>\n\n            <div class=\"hero__overview wysiwyg\"><p>" + ((stack1 = ((helper = (helper = helpers.content || (depth0 != null ? depth0.content : depth0)) != null ? helper : alias3),
+                (typeof helper === alias4 ? helper.call(alias1, {
+                    "name": "content",
+                    "hash": {},
+                    "data": data
+                }) : helper))) != null ? stack1 : "") + "</p></div>\n\n            <div class=\"hero__link-wrapper\">\n                <div>\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.links : depth0), {
+                    "name": "each",
+                    "hash": {},
+                    "fn": container.program(5, data, 0),
+                    "inverse": container.noop,
+                    "data": data
+                })) != null ? stack1 : "") + "                </div>\n            </div>\n        </div>\n</div>\n<div class=\"hero__arrow\">\n    <div class=\"hero__arrow__body\"></div>\n    <div class=\"hero__arrow__head\"></div>\n</div>\n</div>\n\n<!--HERO MODULE END-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["legal-module.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "<!--LEGAL MODULE-->\n<div class=\"legal animate\">\n\n    <h1 class=\"title\">\n        <span>" + alias4(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "title",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</span>\n    </h1>\n\n    <div class=\"legal__content\">" + ((stack1 = ((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "text",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</div>\n\n    <h3 class=\"legal__subtitle\">" + alias4(((helper = (helper = helpers.subtitle || (depth0 != null ? depth0.subtitle : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "subtitle",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</h3>\n\n    <div class=\"legal__content\">" + ((stack1 = ((helper = (helper = helpers.sub || (depth0 != null ? depth0.sub : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "sub",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</div>\n</div>\n<!--END LEGAL MODULE-->";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "title",
+                "hash": {},
+                "data": data
+            }) : helper))) + "</span>\n    </h1>\n\n    <div class=\"legal__content\">" + ((stack1 = ((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "text",
+                    "hash": {},
+                    "data": data
+                }) : helper))) != null ? stack1 : "") + "</div>\n\n    <h3 class=\"legal__subtitle\">" + alias4(((helper = (helper = helpers.subtitle || (depth0 != null ? depth0.subtitle : depth0)) != null ? helper : alias2),
+                    (typeof helper === alias3 ? helper.call(alias1, {
+                        "name": "subtitle",
+                        "hash": {},
+                        "data": data
+                    }) : helper))) + "</h3>\n\n    <div class=\"legal__content\">" + ((stack1 = ((helper = (helper = helpers.sub || (depth0 != null ? depth0.sub : depth0)) != null ? helper : alias2),
+                        (typeof helper === alias3 ? helper.call(alias1, {
+                            "name": "sub",
+                            "hash": {},
+                            "data": data
+                        }) : helper))) != null ? stack1 : "") + "</div>\n</div>\n<!--END LEGAL MODULE-->";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["news-article.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var alias1 = container.lambda
-          , alias2 = container.escapeExpression;
+            , alias2 = container.escapeExpression;
 
         return "		<picture>\n			<!--[if IE 9]><video style=\"display: none;\"><![endif]-->\n		   <source srcset=\"" + alias2(alias1((depth0 != null ? depth0.image_mobile : depth0), depth0)) + "\" media=\"(max-width: 480px)\">\n			<!--[if IE 9]></video><![endif]-->\n			<img class=\"content__cover\" src=\"" + alias2(alias1((depth0 != null ? depth0.image : depth0), depth0)) + "\" srcset=\"" + alias2(alias1((depth0 != null ? depth0.image : depth0), depth0)) + "\" alt=\"Article Image\">\n		</picture>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         return " by " + container.escapeExpression(container.lambda((depth0 != null ? depth0.author : depth0), depth0));
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         return "		<a class=\"btn feat-link\" href=\"" + container.escapeExpression(container.lambda((depth0 != null ? depth0.link : depth0), depth0)) + "\"> View Source <i class=\"external\"></i> </a>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = container.lambda, alias3 = container.escapeExpression;
 
         return "<article class=\"article\">\n" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.image : depth0), {
@@ -1437,13 +1437,13 @@ this["TEMPLATES"]["news-article.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["news-item.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda;
 
         return "		<li class=\"news__list-item\">\n			<span class=\"news__date\">" + ((stack1 = alias1((depth0 != null ? depth0.simpleDate : depth0), depth0)) != null ? stack1 : "") + "</span>\n			<a href=\"" + container.escapeExpression(alias1((depth0 != null ? depth0.url : depth0), depth0)) + "\">" + ((stack1 = alias1((depth0 != null ? depth0.title : depth0), depth0)) != null ? stack1 : "") + "</a>\n		</li>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<h2 class=\"news__title\">\n	<span>" + ((stack1 = container.lambda((depth0 != null ? depth0.date : depth0), depth0)) != null ? stack1 : "") + "</span>\n</h2>\n\n<ul class=\"news__list\">\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.posts : depth0), {
@@ -1458,13 +1458,13 @@ this["TEMPLATES"]["news-item.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["news-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda;
 
         return "            <li class=\"news__list-item\">\n                <span class=\"news__date\">" + ((stack1 = alias1((depth0 != null ? depth0["short-date"] : depth0), depth0)) != null ? stack1 : "") + "</span>\n                <a href=\"" + container.escapeExpression(alias1((depth0 != null ? depth0.src : depth0), depth0)) + "\">" + ((stack1 = alias1((depth0 != null ? depth0["short-desc"] : depth0), depth0)) != null ? stack1 : "") + "</a>\n            </li>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!--NEWS MODULE-->\n<div class=\"news animate\">\n    <h2 class=\"news__title\">\n        <span>" + ((stack1 = container.lambda((depth0 != null ? depth0["news-year"] : depth0), depth0)) != null ? stack1 : "") + "</span>\n    </h2>\n\n    <ul class=\"news__list\">\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0["news-list"] : depth0), {
@@ -1480,58 +1480,58 @@ this["TEMPLATES"]["news-module.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["notification-module.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "<!--NOTIFICATION MODULE-->\n<div class=\"notification\">\n\n    <div class=\"notification__wrapper\">\n        <p class=\"notification__text\">" + ((stack1 = ((helper = (helper = helpers.text || (depth0 != null ? depth0.text : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "text",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p>\n        <div class=\"notification__sub\">\n            <button class=\"notification__info\" type=\"button\">Dismiss</button>\n        </div>\n    </div>\n\n</div>\n<!--END NOTIFICATION MODULE-->\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "text",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</p>\n        <div class=\"notification__sub\">\n            <button class=\"notification__info\" type=\"button\">Dismiss</button>\n        </div>\n    </div>\n\n</div>\n<!--END NOTIFICATION MODULE-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["settings-module.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "<!--SETTINGS MODULE-->\n<script src=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "static_url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "/js/libs.develop.js\"></script>\n<script src=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "static_url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "/js/templates.develop.js\"></script>\n<script src=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "static_url",
-            "hash": {},
-            "data": data
-        }) : helper))) + "/js/main.develop.js\"></script>\n<!--END SETTINGS MODULE-->\n";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "static_url",
+                "hash": {},
+                "data": data
+            }) : helper))) + "/js/libs.develop.js\"></script>\n<script src=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "static_url",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "/js/templates.develop.js\"></script>\n<script src=\"" + alias4(((helper = (helper = helpers.static_url || (depth0 != null ? depth0.static_url : depth0)) != null ? helper : alias2),
+                    (typeof helper === alias3 ? helper.call(alias1, {
+                        "name": "static_url",
+                        "hash": {},
+                        "data": data
+                    }) : helper))) + "/js/main.develop.js\"></script>\n<!--END SETTINGS MODULE-->\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["story-child.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "		        <h2 class=\"story-content__title\">\n		            <span>" + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.title : stack1), depth0)) + "</span>\n		        </h2>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         var alias1 = container.lambda
-          , alias2 = container.escapeExpression;
+            , alias2 = container.escapeExpression;
 
         return "		            <a class=\"story-content__links__link feat-link\" href=\"" + alias2(alias1((depth0 != null ? depth0.src : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.link_value : depth0), depth0)) + "</a>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "<!-- HERO -->\n<div class=\"layout__hero\">\n</div>\n<!-- END HERO -->\n\n<!-- CONTENT -->\n<div class=\"layout__content\">\n	<div class=\"layout__content-wrapper\">\n        <div class=\"story-content\">\n" + ((stack1 = helpers["if"].call(alias1, ((stack1 = (depth0 != null ? depth0.model : depth0)) != null ? stack1.title : stack1), {
@@ -1552,33 +1552,33 @@ this["TEMPLATES"]["story-child.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["story-main-content-module.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var helper;
 
         return "        <h2 class=\"story-content__title\">\n            <span>" + container.escapeExpression(((helper = (helper = helpers.title || (depth0 != null ? depth0.title : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "title",
-            "hash": {},
-            "data": data
-        }) : helper))) + "</span>\n        </h2>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "title",
+                "hash": {},
+                "data": data
+            }) : helper))) + "</span>\n        </h2>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         return "            <p class=\"story-content__paragraph\">" + container.escapeExpression(container.lambda((depth0 != null ? depth0.content : depth0), depth0)) + "</p>\n";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         var alias1 = container.lambda
-          , alias2 = container.escapeExpression;
+            , alias2 = container.escapeExpression;
 
         return "                <a class=\"story-content__links__link feat-link\" href=\"" + alias2(alias1((depth0 != null ? depth0.src : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.link_value : depth0), depth0)) + "</a>\n";
     },
-    "7": function(container, depth0, helpers, partials, data) {
+    "7": function (container, depth0, helpers, partials, data) {
         var alias1 = container.lambda
-          , alias2 = container.escapeExpression;
+            , alias2 = container.escapeExpression;
 
         return "            <a class=\"story-content__links__link feat-link\" href=\"" + alias2(alias1((depth0 != null ? depth0.src : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.link_value : depth0), depth0)) + "</a>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = container.lambda, alias3 = container.escapeExpression;
 
         return "<!-- STORY-CONTENT MODULE -->\n<div class=\"story-content\">\n\n" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.title : depth0), {
@@ -1618,7 +1618,7 @@ this["TEMPLATES"]["story-main-content-module.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["web-module.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         return "<div class=\"web__layout web\">\n    <div class=\"node-web\"></div>\n    <div class=\"intro-overlay\"></div>\n    <div class=\"lockup\"> <!--TODO: make lockup into separate module!-->\n        <div class=\"wme-img-logo\">\n            <div class=\"icon-container\">\n                <i class=\"header__logo-icon icon-logo wme\"></i>\n            </div>\n        </div>\n    <div class=\"text-container\">\n        <div class=\"btn feat-link\" data-url=\"/story/\">Read our story</div>\n    </div>\n    </div>\n\n</div>\n<div class=\"overlay\"></div>\n";
     },
     "useData": true
@@ -1626,7 +1626,7 @@ this["TEMPLATES"]["web-module.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["article.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         return "\n<!-- CONTENT -->\n<div class=\"article-page layout__content\">\n    <div class=\"layout__content-wrapper\">\n        <div class='news-article'>\n        </div>\n    </div>\n</div>\n<!--END CONTENT-->\n\n";
     },
     "useData": true
@@ -1634,7 +1634,7 @@ this["TEMPLATES"]["article.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["bookings.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"bookings-page\">\n	<!-- HERO -->\n	<div class=\"layout__hero\">\n	</div>\n	<!-- END HERO -->\n	<!-- CONTENT -->\n	<div class=\"layout__content\">\n		<div class=\"layout__content-wrapper\">\n			<p class=\"layout__content-description\"></p>\n" + ((stack1 = container.invokePartial(partials["agent-finder-module"], (depth0 != null ? depth0["bookings-page"] : depth0), {
@@ -1652,29 +1652,29 @@ this["TEMPLATES"]["bookings.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["careers.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "<div class=\"careers-page\">\n    <!-- HERO -->\n    <div class=\"layout__hero\">\n    </div>\n    <!-- END HERO -->\n\n    <!-- CONTENT -->\n    <div class=\"layout__content\">\n        <div class=\"layout__content-wrapper\">\n            <div class=\"careeer-intro wysiwyg\"><p>" + ((stack1 = ((helper = (helper = helpers.page_intro || (depth0 != null ? depth0.page_intro : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "page_intro",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</p></div>\n" + ((stack1 = container.invokePartial(partials["careers-feed-module"], (depth0 != null ? depth0.regional_links : depth0), {
-            "name": "careers-feed-module",
-            "data": data,
-            "indent": "            ",
-            "helpers": helpers,
-            "partials": partials,
-            "decorators": container.decorators
-        })) != null ? stack1 : "") + ((stack1 = container.invokePartial(partials["careers-feed-module"], (depth0 != null ? depth0.specialty_links : depth0), {
-            "name": "careers-feed-module",
-            "data": data,
-            "indent": "            ",
-            "helpers": helpers,
-            "partials": partials,
-            "decorators": container.decorators
-        })) != null ? stack1 : "") + "            <p class=\"career-links\">For more information, please read the <a href=\"/careers/tos\">Terms of Use</a>, <a href=\"/careers/privacypolicy\">Privacy</a> and <a href=\"/careers/eea\">EEA</a> policies in regards to recruitment.</p>\n        </div>\n    </div>\n    <!--END CONTENT-->\n</div>\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "page_intro",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</p></div>\n" + ((stack1 = container.invokePartial(partials["careers-feed-module"], (depth0 != null ? depth0.regional_links : depth0), {
+                "name": "careers-feed-module",
+                "data": data,
+                "indent": "            ",
+                "helpers": helpers,
+                "partials": partials,
+                "decorators": container.decorators
+            })) != null ? stack1 : "") + ((stack1 = container.invokePartial(partials["careers-feed-module"], (depth0 != null ? depth0.specialty_links : depth0), {
+                "name": "careers-feed-module",
+                "data": data,
+                "indent": "            ",
+                "helpers": helpers,
+                "partials": partials,
+                "decorators": container.decorators
+            })) != null ? stack1 : "") + "            <p class=\"career-links\">For more information, please read the <a href=\"/careers/tos\">Terms of Use</a>, <a href=\"/careers/privacypolicy\">Privacy</a> and <a href=\"/careers/eea\">EEA</a> policies in regards to recruitment.</p>\n        </div>\n    </div>\n    <!--END CONTENT-->\n</div>\n";
     },
     "usePartial": true,
     "useData": true
@@ -1682,7 +1682,7 @@ this["TEMPLATES"]["careers.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["privacypolicy.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!-- CONTENT -->\n<div class=\"layout__content layout__content--legal\">\n    <div class=\"layout__content-wrapper\">\n" + ((stack1 = container.invokePartial(partials["legal-module"], (depth0 != null ? depth0["privacy-policy"] : depth0), {
@@ -1700,7 +1700,7 @@ this["TEMPLATES"]["privacypolicy.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["tos.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!-- CONTENT -->\n<div class=\"layout__content layout__content--legal\">\n    <div class=\"layout__content-wrapper\">\n" + ((stack1 = container.invokePartial(partials["legal-module"], (depth0 != null ? depth0.terms : depth0), {
@@ -1717,7 +1717,7 @@ this["TEMPLATES"]["tos.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["clients.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = container.invokePartial(partials["content-tile-module"], depth0, {
@@ -1730,7 +1730,7 @@ this["TEMPLATES"]["clients.hbs"] = Handlebars.template({
         })) != null ? stack1 : "");
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "\n<!-- HERO -->\n<div class=\"layout__hero\">\n" + ((stack1 = container.invokePartial(partials["hero-module"], (depth0 != null ? depth0["clients-hero"] : depth0), {
@@ -1754,28 +1754,28 @@ this["TEMPLATES"]["clients.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["contact.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper;
 
         return "<div class=\"contact\" data-endpoint=\"/\">\n<!-- HERO -->\n<div class=\"layout__hero\">\n</div>\n<!-- END HERO -->\n\n<!-- CONTENT -->\n<div class=\"layout__content\">\n	<div class=\"layout__content-wrapper\">\n		<section class=\"layout__content-description wysiwyg\">" + ((stack1 = ((helper = (helper = helpers.page_intro || (depth0 != null ? depth0.page_intro : depth0)) != null ? helper : helpers.helperMissing),
-        (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
-            "name": "page_intro",
-            "hash": {},
-            "data": data
-        }) : helper))) != null ? stack1 : "") + "</section>\n" + ((stack1 = container.invokePartial(partials["form-module"], (depth0 != null ? depth0["contact-form"] : depth0), {
-            "name": "form-module",
-            "data": data,
-            "indent": "    \t",
-            "helpers": helpers,
-            "partials": partials,
-            "decorators": container.decorators
-        })) != null ? stack1 : "") + "    </div>\n</div>\n<!--END CONTENT-->\n\n" + ((stack1 = container.invokePartial(partials["contact-popup"], (depth0 != null ? depth0["contact-consent"] : depth0), {
-            "name": "contact-popup",
-            "data": data,
-            "helpers": helpers,
-            "partials": partials,
-            "decorators": container.decorators
-        })) != null ? stack1 : "") + "</div>\n\n";
+            (typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}), {
+                "name": "page_intro",
+                "hash": {},
+                "data": data
+            }) : helper))) != null ? stack1 : "") + "</section>\n" + ((stack1 = container.invokePartial(partials["form-module"], (depth0 != null ? depth0["contact-form"] : depth0), {
+                "name": "form-module",
+                "data": data,
+                "indent": "    \t",
+                "helpers": helpers,
+                "partials": partials,
+                "decorators": container.decorators
+            })) != null ? stack1 : "") + "    </div>\n</div>\n<!--END CONTENT-->\n\n" + ((stack1 = container.invokePartial(partials["contact-popup"], (depth0 != null ? depth0["contact-consent"] : depth0), {
+                "name": "contact-popup",
+                "data": data,
+                "helpers": helpers,
+                "partials": partials,
+                "decorators": container.decorators
+            })) != null ? stack1 : "") + "</div>\n\n";
     },
     "usePartial": true,
     "useData": true
@@ -1783,7 +1783,7 @@ this["TEMPLATES"]["contact.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["cookiepolicy.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!-- CONTENT -->\n<div class=\"layout__content layout__content--legal\">\n    <div class=\"layout__content-wrapper\">\n" + ((stack1 = container.invokePartial(partials["legal-module"], (depth0 != null ? depth0["cookie-policy"] : depth0), {
@@ -1801,7 +1801,7 @@ this["TEMPLATES"]["cookiepolicy.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["expertise.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/expertise\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1819,7 +1819,7 @@ this["TEMPLATES"]["expertise.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["brand.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/expertise/representation/brand\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1837,7 +1837,7 @@ this["TEMPLATES"]["brand.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["collegiate.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         return "\n<!-- HERO -->\n<div class=\"layout__hero\">\n\n</div>\n<!-- END HERO -->\n\n<!-- CONTENT -->\n<div class=\"layout__content\">\n    <div class=\"layout__content-wrapper expertise\">\n        <p class=\"layout__content-description\">\n           As a leading collegiate sports marketing entity, we create innovative national, regional and local platforms to help institutions and brands target nearly 190 million-strong college sports fan base.\n        </p>\n        <div class=\"layout__linkwrapper\">\n            <a class=\"btn feat-link\" href=\"http://imgcollege.com/\">imgcollege.com<i class='external'></i></a>\n        </div>\n\n    </div>\n</div>\n<!--END CONTENT-->\n";
     },
     "useData": true
@@ -1845,7 +1845,7 @@ this["TEMPLATES"]["collegiate.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["digital.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/expertise/representation/digital\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1863,7 +1863,7 @@ this["TEMPLATES"]["digital.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["events.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/expertise/events\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1881,7 +1881,7 @@ this["TEMPLATES"]["events.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["fashion.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!-- HERO -->\n<div class=\"layout__hero\">\n" + ((stack1 = container.invokePartial(partials["hero-module"], (depth0 != null ? depth0["expertise-fashion-hero"] : depth0), {
@@ -1906,7 +1906,7 @@ this["TEMPLATES"]["fashion.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["league.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/expertise/league\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1924,7 +1924,7 @@ this["TEMPLATES"]["league.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["media.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/expertise/media\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1942,7 +1942,7 @@ this["TEMPLATES"]["media.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["original.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!-- HERO -->\n<div class=\"layout__hero\">\n" + ((stack1 = container.invokePartial(partials["hero-module"], (depth0 != null ? depth0["original-hero"] : depth0), {
@@ -1960,7 +1960,7 @@ this["TEMPLATES"]["original.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["representation.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1978,7 +1978,7 @@ this["TEMPLATES"]["representation.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["sportstraining.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/expertise/sportstraining\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -1996,7 +1996,7 @@ this["TEMPLATES"]["sportstraining.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["index.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"layout__web\">\n" + ((stack1 = container.invokePartial(partials["web-module"], (depth0 != null ? depth0.nodegroup : depth0), {
@@ -2014,7 +2014,7 @@ this["TEMPLATES"]["index.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["network.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/network\">\n" + ((stack1 = container.invokePartial(partials.base, depth0, {
@@ -2032,14 +2032,14 @@ this["TEMPLATES"]["network.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["news.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         return "<div class=\"news-page\">\n	<!-- HERO -->\n	<div class=\"layout__hero\">\n	</div>\n	<!-- END HERO -->\n	<!-- CONTENT -->\n	<div class=\"layout__content\">\n	    <div class=\"layout__content-wrapper\">\n	        <div class='news-feed'>\n	        </div>\n	    </div>\n	</div>\n	<!--END CONTENT-->\n</div>\n\n";
     },
     "useData": true
 });
 
 this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "                <h2 class=\"title\">\n                    <span>" + container.escapeExpression(container.lambda((depth0 != null ? depth0.region : depth0), depth0)) + "</span>\n                </h2>\n" + ((stack1 = helpers.each.call(alias1, (depth0 != null ? depth0.featured : depth0), {
@@ -2056,7 +2056,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "");
     },
-    "2": function(container, depth0, helpers, partials, data) {
+    "2": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = container.invokePartial(partials["office-feed-module"], depth0, {
@@ -2068,7 +2068,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
             "decorators": container.decorators
         })) != null ? stack1 : "");
     },
-    "4": function(container, depth0, helpers, partials, data) {
+    "4": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "                    <div class=\"collapsable\">\n                        <div class=\"feat-link toggleOpen animate\">\n                            <span>+</span> Explore Additional Locations <span>+</span>\n                        </div>\n                        <div class=\"inner\">\n" + ((stack1 = helpers["if"].call(alias1, (depth0 != null ? depth0.wme : depth0), {
@@ -2091,7 +2091,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "") + "                        </div>\n                        <div class=\"clear-float\"></div>\n                    </div>\n";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "                            <h3 class=\"grid-result__title\">\n                                <span>WME</span>\n                            </h3>\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.wme : depth0), {
@@ -2102,7 +2102,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "");
     },
-    "6": function(container, depth0, helpers, partials, data) {
+    "6": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = container.invokePartial(partials["office-feed-module"], depth0, {
@@ -2114,7 +2114,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
             "decorators": container.decorators
         })) != null ? stack1 : "");
     },
-    "8": function(container, depth0, helpers, partials, data) {
+    "8": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "                            <h3 class=\"grid-result__title\">\n                                <span>IMG</span>\n                            </h3>\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.img : depth0), {
@@ -2125,7 +2125,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
             "data": data
         })) != null ? stack1 : "");
     },
-    "10": function(container, depth0, helpers, partials, data) {
+    "10": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.locations : depth0), {
@@ -2137,7 +2137,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
         })) != null ? stack1 : "");
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"offices\" data-endpoint=\"/\">\n    <!-- HERO -->\n    <div class=\"layout__hero\">\n    </div>\n    <!-- END HERO -->\n    <!-- CONTENT -->\n    <div class=\"layout__content\">\n        <div class=\"layout__content-wrapper\">\n" + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}), (depth0 != null ? depth0.regions : depth0), {
@@ -2154,7 +2154,7 @@ this["TEMPLATES"]["offices.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["page.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -2172,7 +2172,7 @@ this["TEMPLATES"]["page.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["privacypolicy.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, helper, alias1 = depth0 != null ? depth0 : (container.nullContext || {}), alias2 = helpers.helperMissing, alias3 = "function", alias4 = container.escapeExpression;
 
         return "<!-- CONTENT -->\n<div class=\"layout__content layout__content--legal\">\n    <div class=\"layout__content-wrapper\">\n        " + ((stack1 = container.invokePartial(partials["legal-module"], (depth0 != null ? depth0["privacy-policy"] : depth0), {
@@ -2182,36 +2182,36 @@ this["TEMPLATES"]["privacypolicy.hbs"] = Handlebars.template({
             "partials": partials,
             "decorators": container.decorators
         })) != null ? stack1 : "") + " Effective Date: December 30, 2019\n        <br>\n        <ul class=\"links\">\n            <li><a href=\"#who_we_are\">WHO WE ARE</a></li>\n            <li><a href=\"#info_about\">WHAT THIS PRIVACY POLICY IS ABOUT</a></li>\n            <li><a href=\"#info_collect\">HOW WE COLLECT YOUR PERSONAL INFORMATION</a></li>\n            <li><a href=\"#info_collect_you\">WHAT PERSONAL INFORMATION WE COLLECT</a></li>\n            <li><a href=\"#info_collect_other\">INFORMATION WE COLLECT FROM OTHER SOURCES</a></li>\n            <li><a href=\"#info_used\">HOW WE USE YOUR INFORMATION</a></li>\n            <li><a href=\"#info_disc\">DISCLOSURE OF YOUR INFORMATION</a></li>\n            <li><a href=\"#info_storage\">STORAGE AND TRANSFER OF INFORMATION</a></li>\n            <li><a href=\"#cookies\">COOKIES AND TECHNICAL DATA</a></li>\n            <li><a href=\"#ad_social\">ADVERTISING AND SOCIAL MEDIA</a></li>\n            <li><a href=\"#children\">CHILDREN</a></li>\n            <li><a href=\"#profiling\">PROFILING</a></li>\n            <li><a href=\"#cali_rights\">YOUR CALIFORNIA PRIVACY RIGHTS</a></li>\n            <li><a href=\"#eu_rights\">YOUR EU AND OTHER PRIVACY RIGHTS</a></li>\n            <li><a href=\"#dont_track\">DO NOT TRACK</a></li>\n            <li><a href=\"#security\">SECURITY</a></li>\n            <li><a href=\"#third_party\">LINKS TO THIRD PARTY WEBSITES</a></li>\n            <li><a href=\"#privacy_changes\">CHANGES TO OUR PRIVACY POLICY</a></li>\n            <li><a href=\"#contact_us\">CONTACT</a></li>\n        </ul>\n        <br>\n        <b id=\"who_we_are\">WHO WE ARE</b> The data controller and operator of this website is William Morris Endeavor Entertainment, LLC dba WME of 9601 Wilshire Blvd. 3rd Floor, Beverly Hills, California 90210 and references to WME used in this policy include all members of the WME group of companies (WME Group Companies) which is comprised of affiliates, wholly owned subsidiaries, joint venture partners, parent or holding companies. Each of our websites will refer to the primary WME company responsible for providing services to you.\n        <br>WME (“WME”, \"we\", \"us\", \"our\") as used in this policy refers to WME and the WME Group Companies.\n\n        <b id=\"info_about\">WHAT THIS PRIVACY POLICY IS ABOUT</b> This Privacy Policy (together with our Terms of Use, Cookie Policy and any other documents referred to therein) provides information on the data we collect from you, or that you provide to us, through this website (\"Website\") and how we process it. Please read this policy carefully before you provide us with your personal information. This Policy provides detailed information about when and why we collect your personal information, how we may use it, and how we keep it secure. This policy works in conjunction with the <a href=\"/cookiepolicy\">Cookie Policy </a> and <a href=\"/tos\">Terms of Use</a>. It covers what we collect from you or your use of the Website, it does not apply to information that you provide or have provided to other websites or social media or that has come from public sources. This policy also provides information about your privacy rights and to how to request and enforce them.\n        <br><br>This Privacy Policy does not apply to the personal information of our talent. \n\n        <b id=\"info_collect\">HOW WE COLLECT YOUR PERSONAL INFORMATION</b> We collect your personal information at the point you decide to interact with us. This may include signing up on line, subscribing to newsletters, event updates, products and services, contacting customer service, asking a question or making a comment. We also may use certain cookies and other technologies to understand how you interact with our Website.\n        \n        <b id=\"info_collect_you\">WHAT PERSONAL INFORMATION WE COLLECT</b> The information you give us may include your name, address, e-mail address and phone /mobile number. We may also collect information from you that you choose to provide for example when you send us a resume or CV through our approved channels, such as the careers page or contact section indicated on our website.\n\n        <b id=\"info_collect_other\">INFORMATION WE COLLECT FROM OTHER SOURCES</b> We may process your personal information if you use any of our other websites operated by our WME Group Companies including purchase history, browsing habits and user experience. We may also receive and display information and content which you make publically available on your social media platforms.\n        <br>\n        <br> We also work closely with third parties (including, for example, our suppliers, advertising networks, analytics providers and ad-tech companies) and we may receive information about you from them.\n\n        <b id=\"info_used\">HOW WE USE YOUR INFORMATION</b>\n\n        We use information you give to us to: \n\n        <ul>\n            <li>help us respond to your queries;</li>\n            <li>carry out our obligations arising from any contracts we enter with you to provide you with information, products and services you’ve requested from us;</li>\n            <li>send you our newsletter, email updates, services we feel may interest you and other subscriptions with your consent;</li>\n            <li>provide you with information about other, similar goods and services we offer based on what you’ve recently purchased or enquired about;</li>\n            <li>if you are not in the EEA or a jurisdiction that prohibits it, we can provide you, or permit selected third parties to provide you, with information about goods or services that may interest you;</li>\n            <li>notify you about changes to our services;and</li>\n            <li>comply with legal and regulatory requirements.</li>\n        </ul>\n\n        We use information we collect about you to:\n        <ul>\n            <li>improve our Website to present content to you and your computer in an effective manner;</li>\n            <li>allow you to participate in interactive features of our services, when you choose to do so as part of our efforts to keep our Website safe and secure;</li>\n            <li>measure or understand the effectiveness of our advertising, and to deliver relevant advertising to you; and</li>\n            <li>provide or permit third parties to provide targeted advertising via websites you visit about goods or services that you may find interesting (see <a href=\"#ad_social\">Ad Tech</a> section and <a href=\"/cookiepolicy\">Cookie Policy</a>)</li>\n\n        </ul>\n\n        <br>\n        <br> We may combine information we receive from other sources with information you give to us and information we collect about you and use them to ensure that content from our Website is presented in the most effective manner for you and for your computer.\n\n        <b id=\"info_disc\">DISCLOSURE OF YOUR INFORMATION</b> We may share your personal information with WME Group Companies and with selected third parties including:\n        <ul>\n            <li>business partners, suppliers and sub-contractors for the performance of any contract we enter into with them or you in order to provide you with a product or service;</li>\n            <li>except for EEA or countries that prohibit it, we may share your personal information with business partners, suppliers and sub-contractors to provide you with unsolicited direct marketing information about promotions and offers without asking for your consent;</li>\n            <li>Non-  personal,  aggregated,  anonymized  or  other  data  to  advertisers,  advertising  networks  and social networks that require the data to select and serve relevant adverts to you and others.</li>\n            <li>We may also use aggregated information to help advertisers reach the kind of audience they want to target;</li>\n            <li>analytics and search engine providers that assist us in the improvement and optimization of the Website;</li>\n            <li>In the event that we sell or buy any business or assets, we may disclose your personal information to the prospective seller or buyer of such business or assets or transfer personal information held where it is one of the transferred assets;</li>\n            <li>We may share your personal information if we are under a duty to disclose or share your data in order to comply with any legal obligation;</li>\n            <li>in the event of an emergency;</li>\n            <li>in order to enforce or apply our Terms of Use and other agreements, or to protect the rights, property, or safety of WME, our customers, clients or individuals; or</li>\n            <li>if you consent to allow us to share your information.</li>\n        </ul>\n\n        <b id=\"info_storage\">STORAGE AND TRANSFER OF INFORMATION</b> All the information you provide, including your personal information, may be processed and stored, transferred or accessed by entities around the world. Specifically, the information and personal information that we collect from you may be transferred to, and stored at, a destination outside the European Economic Area (\"EEA\"), including the United States. It may also be processed by staff operating outside the EEA who work for us or for one of our WME Group companies or your information may be processed outside the EEA by our suppliers (permitted third parties) who have entered into a processing agreement.\n        <br>\n        <br> When we, or our permitted third parties transfer your information outside the EEA, we or they will impose obligations on the recipients of that information to protect the information to the standard required in the EEA or otherwise require the recipient to subscribe to international frameworks intended to provide secure data sharing. In the case of transfers to us, we will put in place appropriate safeguards to ensure that your information remains protected under the standards required by the sender’s jurisdiction.\n        <br>\n        <br> Once we have received your personal information, we will use strict procedures and security features to protect your information from unauthorized access.\n        <b id=\"cookies\">COOKIES AND TECHNICAL DATA</b> This Website uses cookies to help us recognize you and provide you with a good user experience when you browse this Website. We also use cookies and other similar technology to improve this Website. You may have set your consent for recurring and non-recurring cookies through the link in our Cookie Policy and you can change your consent and other preferences for Cookies by following the guidelines there. For detailed information on the cookies we use and the purposes for which we use them see our <a href=\"/cookies\">Cookie Policy</a>.\n\n        <b id=\"ad_social\">ADVERTISING AND SOCIAL MEDIA</b> We, and/or our WME Group companies, engage in on-line advertising that appears on third party websites to keep you aware of our brands, events, products and services. We do this using a variety of digital marketing networks and a variety of advertising technologies like pixels, ad tags, cookies and mobile identifiers as well as service providers such as Google and Facebook. The banners and ads you see will be based on information we hold about you, from what you’ve bought or responded to in the past or your customer journey on our websites. We encourage you to become familiar with our <a href=\"/cookiepolicy\">Cookie Policy </a>. We are not responsible for the data and information treatment employed by other third party websites where our advertising is displayed (our Privacy Policy only refers to our websites), so please always read the privacy policy on third party websites.\n        \n        <b id=\"children\">CHILDREN</b> We do not knowingly collect information from children who are under 13 years old. If you are a parent or guardian of a child who is 13-16 years old and using our Website, please send us an email at dataprivacy@wmeagency.com to opt in to the use of your personal information or request deletion of any personal information we may have collected about the child. If you are a parent or guardian of a child who is under 13 years old and using our Website, please contact us to arrange for deletion of any personal information we may have collected about the child.\n\n        <b id=\"profiling\">PROFILING</b> Individuals have the right not be subject to automated processing, including profiling. We do not engage in automated processing for any reason. We are engaged in the process of decision-making at all levels every day, but all of our decisions and processing are done on a personalized basis. Should we ever institute automated processing or profiling we will make you aware of this and provide a means for you to contact us to discuss the automated process and decision.\n\n        <b id=\"cali_rights\">YOUR CALIFORNIA PRIVACY RIGHTS</b> California residents have certain rights with respect to the personal information collected by businesses. If you are a California resident, you may exercise the following rights regarding your personal information, subject to our ability to verify your request and certain other limitations:\n\n        <ul>\n          <li><strong>Information about You:</strong> You may ask for us to state what categories of personal information about you we have, and the categories of sources from which we collect your personal information;</li>\n          <li><strong>Receive a Copy of Your Data:</strong> You may request the categories and specific pieces of information (if any) we have about you, the categories of personal information that we have disclosed about you for a business purpose, and the categories of third parties with which we have shared personal information in the previous 12 months.</li>\n          <li><strong>Delete Your Data:</strong> You may request that we delete the personal information we have collected from you.</li>\n          <li><strong>Do-Not-Sell:</strong> We do not sell your information.</li>\n          <li><strong>Non-Discrimination:</strong> California law prohibits discrimination against you for exercising your privacy rights.</li>\n        </ul>\n\n        Note: Where certain technologies rely on your data to provide the Website, the absence of that data may impact the operation of the Website.\n\n        <br><br>\n        <strong>How to Exercise Your Rights.</strong> To exercise any of the above rights, please follow the instructions below:\n\n        <ul>\n          <li>Make a request by phone at 1-866-983-0571</li>\n          <li>Make a request online by using <a href=\"https://privacyportal-cdn.onetrust.com/dsarwebform/889c435d-64b4-46d8-ad05-06332fe1d097/e46e14fd-a842-4e85-b6a0-1a9b09ae3baf.html?originSite=" + alias4(((helper = (helper = helpers.referrer || (depth0 != null ? depth0.referrer : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "referrer",
-            "hash": {},
-            "data": data
-        }) : helper))) + "{% if deviceId%}&deviceId=" + alias4(((helper = (helper = helpers.deviceId || (depth0 != null ? depth0.deviceId : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "deviceId",
-            "hash": {},
-            "data": data
-        }) : helper))) + "{%endif%}{% if visitorIp%}&visitorIp=" + alias4(((helper = (helper = helpers.visitorIp || (depth0 != null ? depth0.visitorIp : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "visitorIp",
-            "hash": {},
-            "data": data
-        }) : helper))) + "{%endif%}\">this webform</a></li>\n        </ul>\n\n        If you have any other request you wish to submit to the IMG Privacy Team, you may submit a general information request <a href=\"https://privacyportal-cdn.onetrust.com/dsarwebform/889c435d-64b4-46d8-ad05-06332fe1d097/e46e14fd-a842-4e85-b6a0-1a9b09ae3baf.html?originSite=" + alias4(((helper = (helper = helpers.referrer || (depth0 != null ? depth0.referrer : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "referrer",
-            "hash": {},
-            "data": data
-        }) : helper))) + "{% if deviceId%}&deviceId=" + alias4(((helper = (helper = helpers.deviceId || (depth0 != null ? depth0.deviceId : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "deviceId",
-            "hash": {},
-            "data": data
-        }) : helper))) + "{%endif%}{% if visitorIp%}&visitorIp=" + alias4(((helper = (helper = helpers.visitorIp || (depth0 != null ? depth0.visitorIp : depth0)) != null ? helper : alias2),
-        (typeof helper === alias3 ? helper.call(alias1, {
-            "name": "visitorIp",
-            "hash": {},
-            "data": data
-        }) : helper))) + "{%endif%}\">here</a>.\n        \n        <br><br><strong>Verification Process and Required Information.</strong> All requests must be verified. Some requests, including receiving a copy of your data or requests made by an agent claiming to be acting on your behalf, are subject to heightened requirements. If we cannot verify your identity based on the information provided, a request for a copy of your data shall be treated as a request for information and if we cannot verify your identity, a request to delete personal information may be treated as a request to opt out of the sale of personal information.\n        \n        <br><br><strong>Authorized Agent.</strong> You may designate an authorized agent to make a request on your behalf. An Authorized Agent must have written documentation of their authority to act on your behalf, such as a Power of Attorney. \n\n        <b id=\"eu_rights\">YOUR EU AND OTHER PRIVACY RIGHTS</b> If you are a resident of the EEA you may request a copy of your personal information and confirmation that we are processing personal information about you. You may also be entitled to ask us for other information such as purposes of processing, categories of personal data and recipients of the information. You may be entitled to request correction of any personal information about you which is incomplete or inaccurate, deletion or erasure of it, suspension of processing of it or making it available for transfer to third parties. These rights apply under and subject to applicable law. If you want to exercise any of these or other rights under applicable law, please contact us at <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>. We may require you to prove your identity with approved identification.\n        <br>\n        <br> You may also have the right, in certain circumstances, to object to our processing your personal information. However, we may be entitled to continue processing it in line with applicable law. You can exercise this right at any time by contacting us at <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>. You may also have the right, where provided under applicable law, to ask us to stop processing your personal information for direct marketing purposes. You can exercise this right by checking certain boxes on the forms we use to collect your information or by clicking \"unsubscribe\" on the emails you receive. You can also exercise this right at any time by contacting us at <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>.\n        <br>\n        <br> We will retain your personal information for as long as needed to provide you with services you have requested. We will retain and use your personal information as necessary to comply with our legal obligations, resolve disputes and enforce our agreements.\n\n        <b id=\"dont_track\">DO NOT TRACK</b> You may have the opportunity to receive certain communications from us related to the Website. If you provide us with your email address in order to receive communications, you can opt out at any time by using the unsubscribe links at the bottom of our emails. Some browsers support a “Do Not Track” feature, which is intended to be a signal to websites that you do not wish to be tracked across different websites you visit. Certain legal obligations require that we disclose how websites we operate react to Do Not Track signals. The Website does not currently change the way it operates based upon detection of a Do Not Track or similar signal. Please note that we cannot control how third party websites or online services you visit through Website respond to Do Not Track signals. Check the privacy policies of those third parties for information on their privacy practices.\n\n        <b id=\"security\">SECURITY</b> We have implemented commercially reasonable technical and organizational procedures measures designed to secure your personal information from accidental loss and unauthorized access, use, alteration or disclosure such as firewalls and encryption. In addition, we limit access to your information by employees, agents, contractors, suppliers and authorized third parties who have a business need to know. All are subject to a duty of confidentiality and they will process your information only upon our instructions. Website access to your personal information is protected by password authentication. We have also put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach as required by law or regulation. Finally, please note that the internet is an open system and even with safeguards, we cannot and do not guarantee or warrant the security of any information that you transmit on or through our Website and any transmission of your information is at your own risk.\n        <b id=\"third_party\">LINKS TO THIRD PARTY WEBSITES</b> Our Website, our newsletters, email updates and other communications may, from time to time, contain links to and from the websites of others, including our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies.\n        <b id=\"privacy_changes\">CHANGES TO OUR PRIVACY POLICY</b> Any changes we may make to our Privacy Policy will be posted on this page. Please check back frequently to see any updates or changes to our Privacy Policy. If you do not agree or consent to these updates or changes, do not continue to use the Website\n        <b id=\"contact_us\">CONTACT</b> Questions, comments and requests regarding this Privacy Policy should be addressed to <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>.\n        <br>\n        <br> This website is for information purposes and is not suitable for Inquiries regarding your talent, content, photos, acting or resumes, photos or other unsolicited personal information or enquiries. We cannot process your information if it is sent to the wrong place and it will be deleted upon submission.\n    </div>\n</div>\n<!--END CONTENT-->";
+            (typeof helper === alias3 ? helper.call(alias1, {
+                "name": "referrer",
+                "hash": {},
+                "data": data
+            }) : helper))) + "{% if deviceId%}&deviceId=" + alias4(((helper = (helper = helpers.deviceId || (depth0 != null ? depth0.deviceId : depth0)) != null ? helper : alias2),
+                (typeof helper === alias3 ? helper.call(alias1, {
+                    "name": "deviceId",
+                    "hash": {},
+                    "data": data
+                }) : helper))) + "{%endif%}{% if visitorIp%}&visitorIp=" + alias4(((helper = (helper = helpers.visitorIp || (depth0 != null ? depth0.visitorIp : depth0)) != null ? helper : alias2),
+                    (typeof helper === alias3 ? helper.call(alias1, {
+                        "name": "visitorIp",
+                        "hash": {},
+                        "data": data
+                    }) : helper))) + "{%endif%}\">this webform</a></li>\n        </ul>\n\n        If you have any other request you wish to submit to the IMG Privacy Team, you may submit a general information request <a href=\"https://privacyportal-cdn.onetrust.com/dsarwebform/889c435d-64b4-46d8-ad05-06332fe1d097/e46e14fd-a842-4e85-b6a0-1a9b09ae3baf.html?originSite=" + alias4(((helper = (helper = helpers.referrer || (depth0 != null ? depth0.referrer : depth0)) != null ? helper : alias2),
+                        (typeof helper === alias3 ? helper.call(alias1, {
+                            "name": "referrer",
+                            "hash": {},
+                            "data": data
+                        }) : helper))) + "{% if deviceId%}&deviceId=" + alias4(((helper = (helper = helpers.deviceId || (depth0 != null ? depth0.deviceId : depth0)) != null ? helper : alias2),
+                            (typeof helper === alias3 ? helper.call(alias1, {
+                                "name": "deviceId",
+                                "hash": {},
+                                "data": data
+                            }) : helper))) + "{%endif%}{% if visitorIp%}&visitorIp=" + alias4(((helper = (helper = helpers.visitorIp || (depth0 != null ? depth0.visitorIp : depth0)) != null ? helper : alias2),
+                                (typeof helper === alias3 ? helper.call(alias1, {
+                                    "name": "visitorIp",
+                                    "hash": {},
+                                    "data": data
+                                }) : helper))) + "{%endif%}\">here</a>.\n        \n        <br><br><strong>Verification Process and Required Information.</strong> All requests must be verified. Some requests, including receiving a copy of your data or requests made by an agent claiming to be acting on your behalf, are subject to heightened requirements. If we cannot verify your identity based on the information provided, a request for a copy of your data shall be treated as a request for information and if we cannot verify your identity, a request to delete personal information may be treated as a request to opt out of the sale of personal information.\n        \n        <br><br><strong>Authorized Agent.</strong> You may designate an authorized agent to make a request on your behalf. An Authorized Agent must have written documentation of their authority to act on your behalf, such as a Power of Attorney. \n\n        <b id=\"eu_rights\">YOUR EU AND OTHER PRIVACY RIGHTS</b> If you are a resident of the EEA you may request a copy of your personal information and confirmation that we are processing personal information about you. You may also be entitled to ask us for other information such as purposes of processing, categories of personal data and recipients of the information. You may be entitled to request correction of any personal information about you which is incomplete or inaccurate, deletion or erasure of it, suspension of processing of it or making it available for transfer to third parties. These rights apply under and subject to applicable law. If you want to exercise any of these or other rights under applicable law, please contact us at <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>. We may require you to prove your identity with approved identification.\n        <br>\n        <br> You may also have the right, in certain circumstances, to object to our processing your personal information. However, we may be entitled to continue processing it in line with applicable law. You can exercise this right at any time by contacting us at <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>. You may also have the right, where provided under applicable law, to ask us to stop processing your personal information for direct marketing purposes. You can exercise this right by checking certain boxes on the forms we use to collect your information or by clicking \"unsubscribe\" on the emails you receive. You can also exercise this right at any time by contacting us at <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>.\n        <br>\n        <br> We will retain your personal information for as long as needed to provide you with services you have requested. We will retain and use your personal information as necessary to comply with our legal obligations, resolve disputes and enforce our agreements.\n\n        <b id=\"dont_track\">DO NOT TRACK</b> You may have the opportunity to receive certain communications from us related to the Website. If you provide us with your email address in order to receive communications, you can opt out at any time by using the unsubscribe links at the bottom of our emails. Some browsers support a “Do Not Track” feature, which is intended to be a signal to websites that you do not wish to be tracked across different websites you visit. Certain legal obligations require that we disclose how websites we operate react to Do Not Track signals. The Website does not currently change the way it operates based upon detection of a Do Not Track or similar signal. Please note that we cannot control how third party websites or online services you visit through Website respond to Do Not Track signals. Check the privacy policies of those third parties for information on their privacy practices.\n\n        <b id=\"security\">SECURITY</b> We have implemented commercially reasonable technical and organizational procedures measures designed to secure your personal information from accidental loss and unauthorized access, use, alteration or disclosure such as firewalls and encryption. In addition, we limit access to your information by employees, agents, contractors, suppliers and authorized third parties who have a business need to know. All are subject to a duty of confidentiality and they will process your information only upon our instructions. Website access to your personal information is protected by password authentication. We have also put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach as required by law or regulation. Finally, please note that the internet is an open system and even with safeguards, we cannot and do not guarantee or warrant the security of any information that you transmit on or through our Website and any transmission of your information is at your own risk.\n        <b id=\"third_party\">LINKS TO THIRD PARTY WEBSITES</b> Our Website, our newsletters, email updates and other communications may, from time to time, contain links to and from the websites of others, including our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies.\n        <b id=\"privacy_changes\">CHANGES TO OUR PRIVACY POLICY</b> Any changes we may make to our Privacy Policy will be posted on this page. Please check back frequently to see any updates or changes to our Privacy Policy. If you do not agree or consent to these updates or changes, do not continue to use the Website\n        <b id=\"contact_us\">CONTACT</b> Questions, comments and requests regarding this Privacy Policy should be addressed to <a href=\"mailto:dataprivacy@wmeagency.com\" target=\"_top\">dataprivacy@wmeagency.com</a>.\n        <br>\n        <br> This website is for information purposes and is not suitable for Inquiries regarding your talent, content, photos, acting or resumes, photos or other unsolicited personal information or enquiries. We cannot process your information if it is sent to the wrong place and it will be deleted upon submission.\n    </div>\n</div>\n<!--END CONTENT-->";
     },
     "usePartial": true,
     "useData": true
@@ -2219,7 +2219,7 @@ this["TEMPLATES"]["privacypolicy.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["responsibility.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"page\" data-endpoint=\"/\">\n" + ((stack1 = container.invokePartial(partials.base, (depth0 != null ? depth0.model : depth0), {
@@ -2236,23 +2236,23 @@ this["TEMPLATES"]["responsibility.hbs"] = Handlebars.template({
 });
 
 this["TEMPLATES"]["story.hbs"] = Handlebars.template({
-    "1": function(container, depth0, helpers, partials, data) {
+    "1": function (container, depth0, helpers, partials, data) {
         var alias1 = container.lambda
-          , alias2 = container.escapeExpression;
+            , alias2 = container.escapeExpression;
 
         return "                        <a class=\"story-content__links__link feat-link\" href=\"" + alias2(alias1((depth0 != null ? depth0.src : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.link_value : depth0), depth0)) + "</a>\n";
     },
-    "3": function(container, depth0, helpers, partials, data) {
+    "3": function (container, depth0, helpers, partials, data) {
         return "                    <p class=\"story-content__paragraph\">" + container.escapeExpression(container.lambda((depth0 != null ? depth0.content : depth0), depth0)) + "</p>\n";
     },
-    "5": function(container, depth0, helpers, partials, data) {
+    "5": function (container, depth0, helpers, partials, data) {
         var alias1 = container.lambda
-          , alias2 = container.escapeExpression;
+            , alias2 = container.escapeExpression;
 
         return "                    <a class=\"story-content__links__link feat-link\" href=\"" + alias2(alias1((depth0 != null ? depth0.src : depth0), depth0)) + "\">" + alias2(alias1((depth0 != null ? depth0.link_value : depth0), depth0)) + "</a>\n";
     },
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1, alias1 = container.lambda, alias2 = container.escapeExpression, alias3 = depth0 != null ? depth0 : (container.nullContext || {});
 
         return "<div class=\"story-page\" data-endpoint=\"story\">\n<!-- HERO -->\n<div class=\"layout__hero\">\n</div>\n<!-- END HERO -->\n\n<!-- CONTENT -->\n<div class=\"layout__content\">\n	<div class=\"layout__content-wrapper our-story-main\">\n        <div class=\"story-content\">\n\n            <div class=\"story-content__body\">\n                <p class=\"story-content__paragraph\">" + alias2(alias1(((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.description : stack1), depth0)) + "</p>\n\n                <div class=\"link-wrapper\">\n" + ((stack1 = helpers.each.call(alias3, ((stack1 = (depth0 != null ? depth0.content : depth0)) != null ? stack1.top_links_section : stack1), {
@@ -2280,7 +2280,7 @@ this["TEMPLATES"]["story.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["entertainment.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"story-page-child\">\n" + ((stack1 = container.invokePartial(partials["story-child"], (depth0 != null ? depth0.model : depth0), {
@@ -2298,7 +2298,7 @@ this["TEMPLATES"]["entertainment.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["fashion.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"story-page-child\">\n" + ((stack1 = container.invokePartial(partials["story-child"], (depth0 != null ? depth0.model : depth0), {
@@ -2316,7 +2316,7 @@ this["TEMPLATES"]["fashion.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["lifestyle.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!-- HERO -->\n<div class=\"layout__hero\">\n" + ((stack1 = container.invokePartial(partials["hero-module"], (depth0 != null ? depth0["lifestyle-hero"] : depth0), {
@@ -2348,7 +2348,7 @@ this["TEMPLATES"]["lifestyle.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["sports.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<div class=\"story-page-child\">\n" + ((stack1 = container.invokePartial(partials["story-child"], (depth0 != null ? depth0.model : depth0), {
@@ -2366,7 +2366,7 @@ this["TEMPLATES"]["sports.hbs"] = Handlebars.template({
 
 this["TEMPLATES"]["tos.hbs"] = Handlebars.template({
     "compiler": [7, ">= 4.0.0"],
-    "main": function(container, depth0, helpers, partials, data) {
+    "main": function (container, depth0, helpers, partials, data) {
         var stack1;
 
         return "<!-- CONTENT -->\n<div class=\"layout__content layout__content--legal tos\">\n    <div class=\"layout__content-wrapper\">\n" + ((stack1 = container.invokePartial(partials["legal-module"], (depth0 != null ? depth0.terms : depth0), {

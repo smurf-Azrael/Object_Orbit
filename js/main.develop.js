@@ -3133,7 +3133,7 @@
                 // //add background image
                 var bgTexture = new THREE.TextureLoader().load('../img/BOLA_MUNDO.png');
                 var bg = new THREE.Mesh(
-                    new THREE.PlaneGeometry(1, window.innerWidth / window.innerHeight, 1, 1),
+                    new THREE.PlaneGeometry(0.2, 0.2 * window.innerWidth / window.innerHeight, 100, 1),
                     new THREE.MeshBasicMaterial({ map: bgTexture })
                 );
 
