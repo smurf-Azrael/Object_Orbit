@@ -4892,6 +4892,12 @@ html.no-touch .notification__info:hover,html.no-touch .notification .manage:hove
 .earth > img:hover {  
     transform: scale(1.1);  
 }   */
+.logo{
+    position: absolute;  
+    top: 0%;  
+    left: 50%;  
+    transform: translate(-50%, 0%); 
+}
 .earth {  
     position: absolute;  
     bottom: 50%;  

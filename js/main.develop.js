@@ -3107,12 +3107,17 @@
                             { label: '    BRANDED CONTENT', connections: [1], url: '/expertise', cVParents: [1], img: './img/BRAND_CONTENT.png' },
                             { label: '        CULTURA', connections: [1], url: '/expertise/music', cVParents: [1], img: './img/CULTURA.png' },
                             { label: '        DIGITAL', connections: [0, 1, 2], url: '/expertise', cVParents: [1], img: './img/DIGITAL.png' },
-                            { label: '       F1', connections: [1, 2, 3, 4], url: '/expertise', cVParents: [1], img: './img/F1.png' },
-                            { label: '      FUTBOL', connections: [2, 3, 4, 5], url: '/expertise', cVParents: [1], img: './img/FUTBOL.png' },
-                            { label: '  MOTOGP', connections: [3, 4, 5, 6], url: '/expertise', cVParents: [1], img: './img/MOTOGP.png' },
-                            { label: '          WELLNESS', connections: [4, 5, 6, 7], url: 'http://google.com/', cVParents: [1], img: './img/WELLNESS.png' },
-                            { label: '          MUSICA', connections: [1, 5, 6, 7, 8], url: 'http://google.com/', cVParents: [1], img: './img/MUSICA.png' },
-                            { label: '          SPORTS', connections: [0, 6, 7, 8, 9], url: 'http://google.com/', cVParents: [1], img: './img/SPORTS.png' },
+                            { label: '       F1', connections: [1, 2, 4], url: '/expertise', cVParents: [1], img: './img/F1.png' },
+                            { label: '      FUTBOL', connections: [2, 5], url: '/expertise', cVParents: [1], img: './img/FUTBOL.png' },
+                            { label: '  MOTOGP', connections: [3, 5, 6], url: '/expertise', cVParents: [1], img: './img/MOTOGP.png' },
+                            { label: '          WELLNESS', connections: [4, 6, 7], url: 'http://google.com/', cVParents: [1], img: './img/WELLNESS.png' },
+                            { label: '          MUSICA', connections: [1, 5, 8], url: 'http://google.com/', cVParents: [1], img: './img/MUSICA.png' },
+                            { label: '          SPORTS', connections: [0, 7, 9], url: 'http://google.com/', cVParents: [1], img: './img/SPORTS.png' },
+                            { label: '          BRANDS', connections: [0, 8, 9], url: 'http://google.com/', cVParents: [1], },
+                            { label: '          BUSINESS', connections: [8, 10], url: 'http://google.com/', cVParents: [1], },
+                            { label: '          STRATEGY', connections: [9, 10, 11], url: 'http://google.com/', cVParents: [1], },
+                            { label: '          INNOVATION', connections: [9, 11, 12], url: 'http://google.com/', cVParents: [1], },
+                            { label: '          COMUNICATION', connections: [10, 13], url: 'http://google.com/', cVParents: [1], },
 
                         ]
                     }
@@ -3172,7 +3177,8 @@
                             }
 
                             defaultText.position.z = 10;
-                            // particle.sprite.add(defaultText);
+                            if (set.points[i].img === undefined)
+                                particle.sprite.add(defaultText);
                         }
 
                         _this.geometry.vertices.push(particle.sprite.position);
